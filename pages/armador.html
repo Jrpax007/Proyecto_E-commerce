@@ -1,0 +1,100 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Armar PC - Tienda de Componentes</title>  
+    <link rel="stylesheet" href="/css/styles.css">  
+</head>  
+<body>  
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="/assets/icons/Proyecto nuevo.webp" alt="Logo"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/productos.html">Productos</a></li>
+                <li><a href="/pages/armador.html">Armar PC</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar productos...">
+                <button id="search-button" class="search-icon-button" aria-label="Buscar">
+                    <!-- Ícono de lupa SVG -->
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M21 20l-4.35-4.35a7.5 7.5 0 1 0-1.41 1.41L20 21zM4 10.5a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0z" />
+                    </svg>
+                </button>
+            </div>
+<<<<<<< HEAD
+            <a href="carrito.html"><img src="/assets/icons/Proyecto nuevo.webp" alt="Carrito">Carrito</a>
+=======
+            <a href="carrito.html"><img src="assets/cart-icon.svg" alt="Carrito"></a>
+>>>>>>> Jr_branch
+        </div>
+    </header>
+        <!-- Main -->
+    <main class="armador-main">  
+        <!-- Panel de Componentes -->  
+        <section class="panel-componentes">  
+            <h2>Selecciona tus componentes</h2>  
+            <div class="categorias">  
+                <button class="btn-categoria active" data-categoria="todos">Todos</button>  
+                <button class="btn-categoria" data-categoria="cpu">CPU</button>  
+                <button class="btn-categoria" data-categoria="gpu">GPU</button>  
+                <!-- Más categorías -->  
+            </div>  
+            <div class="grid-componentes" id="grid-componentes">  
+                <!-- Cards generadas por JS -Armar la lógica -->  
+            </div>  
+        </section>  
+
+        <!-- Panel del Carrito -->  
+        <aside class="panel-carrito">  
+            <h2>Tu configuración</h2>  
+            <div class="carrito-items" id="carrito-items">  
+                <!-- Items agregados aparecen acá -->  
+            </div>  
+            <div class="carrito-total">  
+                <p>Total: <span id="precio-total">0</span> USD</p>  
+                <button id="btn-finalizar">Finalizar compra</button>  
+            </div>  
+        </aside>  
+    </main>  
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-col">
+            <h3>Nosotros</h3>
+            <ul>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Procesadores</a></li>
+                <li><a href="#">Gabinetes</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Soporte</h3>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Medios de pago</h3>
+            <img src="assets/payment-methods.webp" alt="Medios de pago">
+        </div>
+    </footer>
+
+    <script src="js/armador.js"></script>  
+</body>  
+</html>  

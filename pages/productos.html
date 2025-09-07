@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Tienda de Componentes</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <!-- Header  -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="/assets/icons/Proyecto nuevo.webp" alt="Logo"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/productos.html">Productos</a></li>
+                <li><a href="/pages/armador.html">Armar PC</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar productos...">
+                <button id="search-button" class="search-icon-button" aria-label="Buscar">
+                    <!-- Ícono de lupa SVG -->
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M21 20l-4.35-4.35a7.5 7.5 0 1 0-1.41 1.41L20 21zM4 10.5a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0z" />
+                    </svg>
+                </button>
+            </div>
+<<<<<<< HEAD
+            <a href="carrito.html"><img src="/assets/icons/Proyecto nuevo.webp" alt="Carrito">Carrito</a>
+=======
+            <a href="carrito.html"><img src="assets/cart-icon.svg" alt="Carrito"></a>
+>>>>>>> Jr_branch
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="productos-main">
+        <!-- Filtros -->
+        <aside class="filtros">
+            <h3>Filtros</h3>
+            <div class="filtro-grupo">
+                <label for="categorias">Categorías:</label>
+                <select id="categorias" name="categoria">
+                    <option value="">Selecciona una categoría</option>
+                    <option value="cpu">CPU</option>
+                    <option value="gpu">GPU</option>
+                    <option value="ram">RAM</option>
+                    <option value="almacenamiento">Almacenamiento</option>
+                </select>
+            </div>
+            <div class="filtro-grupo">
+                <label for="precio">Precio:</label>
+                <input type="range" id="precio" min="0" max="1000" value="0" step="10" style="width: 100%">
+                <div class="precio-rango">
+                    <span id="valor-precio-min">0</span> - <span id="valor-precio-max">1000</span>
+                </div>
+            </div>
+            <button id="btn-aplicar-filtros">Aplicar Filtros</button>
+        </aside>
+        
+        <!-- Grid de Productos -->
+        <section class="productos-grid">
+            <h2>Productos</h2>
+            <div class="grid" id="grid-productos">
+                <!-- Productos cargados dinámicamente con JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer  -->
+    <footer class="footer">
+        <div class="footer-col">
+            <h3>Nosotros</h3>
+            <ul>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Procesadores</a></li>
+                <li><a href="#">Gabinetes</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Soporte</h3>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Medios de pago</h3>
+            <img src="assets/payment-methods.webp" alt="Medios de pago">
+        </div>
+    </footer>
+
+    <script src="js/productos.js"></script>
+</body>
+
+</html>
