@@ -201,10 +201,7 @@ a {
     flex-direction: column;
     text-decoration: none;
     color: #333;
-<<<<<<< HEAD
     padding: 0; /* Quitamos el padding para evitar que afecte los porcentajes */
-=======
->>>>>>> Jr_branch
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden; /* Para evitar desbordes */
@@ -223,7 +220,6 @@ a {
 
 /* contenido de la tarjeta */
 .categoria-card img {
-<<<<<<< HEAD
     height: 80%; /* 80% de la altura del contenedor padre */
     width: 100%;
     object-fit: contain; /* Para que no se deforme */
@@ -250,11 +246,9 @@ a {
 .categoria-card h3 {
     font-size: 1.1rem;
     margin-top: auto;
-=======
     height: 80%;
     width: auto;
     object-fit: contain;
->>>>>>> Jr_branch
 }
 
 .categoria-card span {
@@ -337,12 +331,8 @@ a {
 .producto-card button:hover {
     background: #4490e1;
 }
-<<<<<<< HEAD
-/* Redireccionamiento en Inicio a Armar PC */
-=======
 
 /* Armar PC */
->>>>>>> Jr_branch
 .armar-pc {
     padding: 3rem 2rem;
     text-align: center;
