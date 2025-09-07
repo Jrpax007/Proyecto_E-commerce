@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - Tienda de Componentes</title>
+    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
@@ -12,7 +13,7 @@
     <!-- Header  -->
     <header class="header">
         <div class="logo">
-            <a href="index.html"><img src="/assets/icons/Proyecto nuevo.webp" alt="Logo"></a>
+            <a href="/index.html"><img src="/assets/icons/Proyecto nuevo.webp" alt="Logo"></a>
         </div>
         <nav class="nav">
             <ul>
@@ -36,7 +37,7 @@
             <a href="carrito.html"><img src="/assets/icons/Proyecto nuevo.webp" alt="Carrito">Carrito</a>
     </header>
 
-    <!-- Main -->
+    <!-- INICIO DEL MAIN -->
     <main class="productos-main">
         <!-- Filtros -->
         <aside class="filtros">
@@ -60,16 +61,15 @@
             </div>
             <button id="btn-aplicar-filtros">Aplicar Filtros</button>
         </aside>
-
         <!-- Grid de Productos -->
         <section class="productos-grid">
             <h2>Productos</h2>
             <div class="grid" id="grid-productos">
-                <!-- Productos cargados dinámicamente con JS -->
+                <!-- Productos cargados dinámicamente con JS por medio de fetch() -->
             </div>
         </section>
     </main>
-
+    <!-- FIN DEL MAIN -->
     <!-- Footer  -->
     <footer class="footer">
         <div class="footer-col">
@@ -98,7 +98,7 @@
             <img src="assets/payment-methods.webp" alt="Medios de pago">
         </div>
     </footer>
-
+    <!--JavaScript Link-->
     <script src="js/productos.js"></script>
 </body>
 

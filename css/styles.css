@@ -1,4 +1,4 @@
-/* RESET BÁSICO */
+/*-------------------------------------- RESET BÁSICO -------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ a {
     text-decoration: none;
 }
 
-/* HEADER */
+/*-------------------------------------- HEADER --------------------------------------*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -74,15 +74,14 @@ a {
     height: 24px;
 }
 
-/* CARRUSEL */
+/*-------------------------------------- CARRUSEL --------------------------------------*/
 .carousel-container {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
     overflow: hidden;
     position: relative;
-    height: 200px;
-    /* Altura fija para las imágenes del carrusel */
+    height: 200px;/* Altura fija para las imágenes del carrusel */
 }
 
 .carousel-track {
@@ -108,7 +107,7 @@ a {
     object-fit: cover;
 }
 
-/* Animación */
+/* Animación -*/
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
@@ -174,7 +173,7 @@ a {
     margin-top: 15px;
 }
 
-/* CATEGORIAS */
+/*--------------------------------------SECCION CATEGORIAS --------------------------------------*/
 .categorias {
     padding: 3rem 2rem;
     text-align: center;
@@ -201,10 +200,10 @@ a {
     flex-direction: column;
     text-decoration: none;
     color: #333;
-    padding: 0; /* Quitamos el padding para evitar que afecte los porcentajes */
+    padding: 0; /* Saqué el padding para que no joda porcentajes */
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden; /* Para evitar desbordes */
+    overflow: hidden; /*ESTA CON DESBORDE Y OCULTO, REDIMENCIONAR IMG A AGREGAR*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -222,9 +221,9 @@ a {
 .categoria-card img {
     height: 80%; /* 80% de la altura del contenedor padre */
     width: 100%;
-    object-fit: contain; /* Para que no se deforme */
+    object-fit: contain;
     display: block;
-    background-color: #f9f9f9; /* Opcional, para que el fondo no sea blanco puro */
+    background-color: #f9f9f9; /* CAMBIAR LUEGO DEL BETA*/
 }
 
 .categoria-card span {
@@ -257,7 +256,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;    /* importante para evitar conflicto con márgenes automáticos */
+    margin: 0;
     text-align: center;
     border-top: 1px solid #8e8e8e;
     padding-top: 0.5rem;
@@ -266,7 +265,7 @@ a {
     border-radius: 0 0 8px 8px;
     font-weight: bold;
 }
-/* PRODUCTOS DESTACADOS */
+/*-------------------------------------- SECCION PRODUCTOS DESTACADOS --------------------------------------*/
 .productos-destacados {
     padding: 3rem 2rem;
     background: #f8f8f8;
@@ -332,7 +331,7 @@ a {
     background: #4490e1;
 }
 
-/* Armar PC */
+/*-------------------------------------- SECCION Armar PC (EN INICIO)-------------------------------------*/
 .armar-pc {
     padding: 3rem 2rem;
     text-align: center;
@@ -366,7 +365,7 @@ a {
     background: #4490e1;
 }
 
-/* Newsletter */
+/*--------------------------------------SECCION NEWSLETTERS --------------------------------------*/
 .newsletter {
     padding: 3rem 2rem;
     text-align: center;
@@ -417,7 +416,7 @@ a {
     background: #4490e1;
 }
 
-/* Testimonios */
+/*-------------------------------------- SECCION TESTIMONIOS --------------------------------------*/
 .testimonios {
     padding: 3rem 2rem;
     text-align: center;
@@ -456,7 +455,7 @@ a {
     color: #555;
 }
 
-/* FOOTER */
+/*-------------------------------------- FOOTER --------------------------------------*/
 .footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -489,7 +488,7 @@ a {
     height: auto;
 }
 
-/* PRODUCTOS - MAIN */
+/*--------------------------------------PAG. PRODUCTOS - MAIN --------------------------------------*/
 .productos-main {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -500,7 +499,7 @@ a {
     width: 100%;
 }
 
-/* FILTROS */
+/*Filtros*/
 .filtros {
     background: #f8f8f8;
     padding: 1.5rem;
@@ -536,7 +535,7 @@ a {
     width: 100%;
 }
 
-/* GRID DE PRODUCTOS */
+/*Grid de Productos*/
 .productos-grid h2 {
     margin-bottom: 1.5rem;
 }
@@ -588,7 +587,7 @@ a {
     cursor: pointer;
 }
 
-/* ARMADOR PC */
+/*--------------------------------------PAG. ARMADOR PC --------------------------------------*/
 .armador-main {
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -665,7 +664,7 @@ a {
 }
 
 
-/*  FORMULARIO  */
+/*-------------------------------------- PAG. CONTACTO  --------------------------------------*/
 
 .contacto-main {
     max-width: 600px;

@@ -1,4 +1,4 @@
-// Datos de componentes  
+/*Datos de componentes*/
 const componentes = [  
     { id: 1, nombre: "Intel i7-12700K", precio: 350, categoria: "cpu", imagen: "assets/cpu1.webp" },  
     { id: 2, nombre: "AMD Ryzen 7 5800X", precio: 300, categoria: "cpu", imagen: "assets/cpu2.webp" },  
@@ -8,7 +8,7 @@ const componentes = [
 
 let carrito = [];  
 
-// Generar cards de componentes  
+/* Funcion para generar las cards de componentes  */
 function renderizarComponentes() {  
     const grid = document.getElementById("grid-componentes");  
     grid.innerHTML = componentes.map(componente => `  
@@ -21,14 +21,14 @@ function renderizarComponentes() {
     `).join("");  
 }  
 
-// Agregar al carrito  
+/* Funcion para agregar al carrito */
 function agregarAlCarrito(id) {  
     const componente = componentes.find(c => c.id === id);  
     carrito.push(componente);  
     actualizarCarrito();  
 }  
 
-// Actualizar carrito y total  
+/*Funcion para actualizar carrito y total */ 
 function actualizarCarrito() {  
     const carritoItems = document.getElementById("carrito-items");  
     carritoItems.innerHTML = carrito.map(item => `  
@@ -41,12 +41,12 @@ function actualizarCarrito() {
     document.getElementById("precio-total").textContent = total;  
 }  
 
-// Finalizar compra  
+/* Funcion para finalizar la compra */ 
 document.getElementById("btn-finalizar").addEventListener("click", () => {  
     alert("Compra finalizada (simulación). Total: " + carrito.reduce((sum, item) => sum + item.precio, 0) + " USD");  
     carrito = [];  
     actualizarCarrito();  
 });  
 
-// Iniciar  
+/* Renderizar componentes al cargar la página */  
 document.addEventListener("DOMContentLoaded", renderizarComponentes);  
