@@ -1,4 +1,4 @@
-// Datos de ejemplo (simulan productos)
+/*Datos de ejemplo (simulacion de productos)*/
 const productos = [
     { id: 1, nombre: "Procesador Intel i7", precio: 350, categoria: "cpu", imagen: "assets/cpu1.webp" },
     { id: 2, nombre: "GeForce RTX 4070", precio: 600, categoria: "gpu", imagen: "assets/gpu1.webp" },
@@ -8,7 +8,7 @@ const productos = [
     { id: 6, nombre: "GeForce RTX 3060", precio: 400, categoria: "gpu", imagen: "assets/gpu2.webp" }
 ];
 
-// Cargar productos en el grid
+/*Cargar productos en el grid*/
 function cargarProductos(productosArray) {
     const grid = document.getElementById("grid-productos");
     grid.innerHTML = "";
@@ -20,13 +20,13 @@ function cargarProductos(productosArray) {
             <img src="${producto.imagen}" alt="${producto.nombre}">
             <h3>${producto.nombre}</h3>
             <p class="precio">$${producto.precio}</p>
-            <button onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
-        `;
+            <button onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>`;
+            /*------------->  AGREGAR LO QUE FALTE DE DETALLES ACÁ  <--------------------*/
         grid.appendChild(card);
     });
 }
 
-// Filtrar productos
+/*Filtro de productos*/
 function filtrarProductos() {
     const precioMin = parseInt(document.getElementById("precio-min").value);
     const precioMax = parseInt(document.getElementById("precio-max").value);
@@ -41,12 +41,12 @@ function filtrarProductos() {
     cargarProductos(productosFiltrados);
 }
 
-// Eventos
+/*Eventos*/
 document.addEventListener("DOMContentLoaded", () => {
-    // Cargar todos los productos inicialmente
+    /*Cargar todos los productos inicialmente*/
     cargarProductos(productos);
 
-    // Configurar rangos de precios
+    /*Configurar rangos de precios*/
     const precioMin = document.getElementById("precio-min");
     const precioMax = document.getElementById("precio-max");
     const valorPrecioMin = document.getElementById("valor-precio-min");
@@ -60,12 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
         valorPrecioMax.textContent = precioMax.value;
     });
 
-    // Aplicar filtros al hacer clic en el botón
+    /*Aplicar filtros cuando se hace clic en el botón*/
     document.getElementById("btn-aplicar-filtros").addEventListener("click", filtrarProductos);
 });
 
-// Función para agregar al carrito (simulada)
+/*Función para agregar al carrito (simulada)*/
 function agregarAlCarrito(id) {
     console.log(`Producto ${id} agregado al carrito`);
-    // Acá va la integración con localStorage
+    /*--------->   Acá va la integración con localStorage  <--------------*/
 }

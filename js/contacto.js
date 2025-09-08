@@ -1,6 +1,5 @@
+/* Validación y envío del formulario de contacto (simulado) */
 const formulario = document.getElementById('formulario-contacto');  
-
-// Validación en tiempo real  
 document.getElementById('email').addEventListener('blur', function() {  
     const email = this.value;  
     const error = document.getElementById('error-email');  
@@ -12,11 +11,11 @@ document.getElementById('email').addEventListener('blur', function() {
     }  
 });  
 
-// Envío simulado  
+/* Manejar el envío del formulario */
 formulario.addEventListener('submit', function(e) {  
-    e.preventDefault();  
+    e.preventDefault();
     
-    // Simular envío  
+    /*Simular envío*/
     console.log('Datos del formulario:', {  
         nombre: document.getElementById('nombre').value,  
         email: document.getElementById('email').value,  
@@ -26,7 +25,6 @@ formulario.addEventListener('submit', function(e) {
         contacto: document.querySelector('input[name="contacto"]:checked').value,  
         terminos: document.getElementById('terminos').checked  
     });  
-
     alert('Consulta enviada (simulación)');  
     formulario.reset();  
 });  

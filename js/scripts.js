@@ -1,4 +1,4 @@
-/*Animación del carrusel al pasar el mouse*/
+/*Animación del carrusel cuando se pasa el mouse*/
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.carousel-track');
 
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         track.style.animationPlayState = 'running';
     });
 });
-/*Animación del carrusel al hacer scroll*/
+/*Animación del carrusel cuando se hace scroll*/
 const carousel = document.querySelector('.carousel');
 window.addEventListener('scroll', () => {
     const carouselTop = carousel.getBoundingClientRect().top;
@@ -39,11 +39,11 @@ document.addEventListener("visibilitychange", () => {
         // Usuario volvió a la pestaña
         clearInterval(intervalo);
         document.title = tituloOriginal;
-        i = 0; // Reinicia si quieres empezar desde el primer título
+        i = 0; // Reinicia desde el primer título
     }
 });
 
-/*Animación del HEADER al hacer scroll*/
+/*Animación del HEADER cuando se hace scroll*/
 window.addEventListener('scroll', () => {
     const header = document.getElementById('main-header');
     if (window.scrollY > 50) {
@@ -66,14 +66,14 @@ newsletterForm.addEventListener('submit', (e) => {
     }   
 }); 
 
-/*Busqueda del input */
+/*Input de Búsqueda */
 const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('search-input');
 searchButton.addEventListener('click', () => {
     const query = searchInput.value.trim();
     if (query) {
         alert(`Buscando productos relacionados con: ${query}`);
-        /*Hacer una búsqueda usando fetch y una API (conectar con tu base de datos)
+        /*Hacer una búsqueda usando fetch() y una API (conectar con tu base de datos)
 Al presionar buscar, haces una petición fetch a una API que consulta la base de datos y devuelve solo los productos que coinciden con el término.
 Requiere que tengas una API REST o similar que acepte el término de búsqueda como parámetro y devuelva resultados en JSON..*/
     } else {
@@ -81,7 +81,7 @@ Requiere que tengas una API REST o similar que acepte el término de búsqueda c
     }
 });
 
-/*Animación de los botones (busqueda prod) al hacer hover*/
+/*Animación de los botones (busqueda prod) :hover*/
 const buttons = document.querySelectorAll('button');
 buttons.forEach(button => {//Recordar que luego hay que cambiar a la API real//
     button.addEventListener('mouseenter', () => {
