@@ -1,8 +1,8 @@
 // Datos de componentes  
 const componentes = [  
-    { id: 1, nombre: "Intel i7-12700K", precio: 350, categoria: "cpu", imagen: "assets/cpu1.webp" },  
-    { id: 2, nombre: "AMD Ryzen 7 5800X", precio: 300, categoria: "cpu", imagen: "assets/cpu2.webp" },  
-    { id: 3, nombre: "NVIDIA RTX 4070", precio: 600, categoria: "gpu", imagen: "assets/gpu1.webp" },  
+    { id: 1, nombre: "Intel i7-12700K", precio: 350, categoria: "cpu", imagen: "./assets/cpu1.webp" },  
+    { id: 2, nombre: "AMD Ryzen 7 5800X", precio: 300, categoria: "cpu", imagen: "./assets/cpu2.webp" },  
+    { id: 3, nombre: "NVIDIA RTX 4070", precio: 600, categoria: "gpu", imagen: "./assets/gpu1.webp" },  
     // Más componentes...  
 ];  
 

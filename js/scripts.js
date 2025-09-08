@@ -79,7 +79,6 @@ Requiere que tengas una API REST o similar que acepte el término de búsqueda c
     } else {
         alert('Por favor, ingresa un término de búsqueda.');
     }
-<<<<<<< HEAD
 });
 
 /*Animación de los botones (busqueda prod) al hacer hover*/
@@ -117,6 +116,3 @@ categoryCards.forEach(card => {
 
 
 
-=======
-});
->>>>>>> Jr_branch
