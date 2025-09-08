@@ -749,13 +749,14 @@ button[type="submit"]:hover {
     justify-content: center;
     cursor: pointer;
     font-size: 24px;
+    margin-top: 6px;
     color: #333; /* Color del icono en modo claro */
     transition: color 0.3s ease; /* Transición suave para el color */
 }
 
 /* Estilo para el ícono cuando se activa el modo oscuro */
 body.dark-mode  .theme-toggle i {
-    color: #333;  /* Cambia el color del ícono cuando está en modo oscuro */
+    color: #ffffff;  /* Cambia el color del ícono cuando está en modo oscuro */
 }
 
 /* Modo oscuro */
