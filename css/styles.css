@@ -81,7 +81,7 @@ a {
     width: 100%;
     overflow: hidden;
     position: relative;
-    height: 200px;/* Altura fija para las imágenes del carrusel */
+    height: 600px;/* Altura fija para las imágenes del carrusel */
 }
 
 .carousel-track {
@@ -90,7 +90,7 @@ a {
     animation: scroll-left 35s linear infinite;
     gap: 1rem;
     align-items: center;
-    height: 100%;
+    height: 40%;
     padding: 5px;
 }
 
@@ -223,7 +223,7 @@ a {
     width: 100%;
     object-fit: contain;
     display: block;
-    background-color: #f9f9f9; /* CAMBIAR LUEGO DEL BETA*/
+    /*background-color: #f9f9f9; /* CAMBIAR LUEGO DEL BETA*/
 }
 
 .categoria-card span {
@@ -233,7 +233,7 @@ a {
     justify-content: center;
     font-size: 1rem;
     font-weight: 500;
-    background-color: #fff; /*fondo de texto (tener en cuenta para el claro/oscuro)*/
+    /*background-color: #fff; /*fondo de texto (tener en cuenta para el claro/oscuro)*/
     border-top: 1px solid #ddd;
     padding: 0.5rem;
     text-align: center;
@@ -291,12 +291,14 @@ a {
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease
 }
+
 
 .producto-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-color: #4490e1;
 }
 
 .producto-card img {
@@ -676,6 +678,7 @@ a {
     background: #f8f9fa;
     padding: 2rem;
     border-radius: 8px;
+    border: solid 1px #373737;
 }
 
 .campo {
@@ -738,3 +741,117 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background: #4490e1;
 }
+/*-------------------------------------- MODO OSCURO --------------------------------------*/
+/* Estilo básico para el botón de cambio de tema */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333; /* Color del icono en modo claro */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+/* Estilo para el ícono cuando se activa el modo oscuro */
+body.dark-mode  .theme-toggle i {
+    color: #333;  /* Cambia el color del ícono cuando está en modo oscuro */
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #333;  /* Fondo oscuro */
+    color: #fff;  /* Texto blanco */
+}
+/* Modo oscuro para secciones */
+body.dark-mode .header,
+body.dark-mode .footer {
+    background-color: #222; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+}
+body.dark-mode .categorias,
+body.dark-mode .productos-destacados,
+body.dark-mode .armar-pc,
+body.dark-mode .testimonios,
+body.dark-mode .newsletter {
+    background-color: #444; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+}
+body.dark-mode .nav a,
+body.dark-mode .nav a:hover {
+    color: #fff; /* Enlaces blancos */
+}
+body.dark-mode .categoria-card,
+body.dark-mode .categoria-card span,
+body.dark-mode .categoria-card img,
+body.dark-mode .producto-card,
+body.dark-mode .precio,
+body.dark-mode .testimonio-card,
+body.dark-mode .filtros,
+body.dark-mode .panel-componentes,
+body.dark-mode .formulario,
+body.dark-mode .panel-carrito {   
+    background-color: #333; /* Fondo oscuro para tarjetas y paneles */
+    color: #fff; /* Texto blanco */
+    border-color: #666; /* Bordes más claros en modo oscuro */
+}
+body.dark-mode .producto-card button,
+body.dark-mode .btn-armar-pc,
+body.dark-mode #newsletter-form button,
+body.dark-mode button[type="submit"],
+body.dark-mode #btn-aplicar-filtros,
+body.dark-mode .btn-categoria.active {
+    background-color: #007bff; /* Botones azules */
+    color: #fff; /* Texto blanco */
+}   
+body.dark-mode .producto-card button:hover,
+body.dark-mode .btn-armar-pc:hover, 
+body.dark-mode #newsletter-form button:hover,
+body.dark-mode button[type="submit"]:hover,
+body.dark-mode #btn-aplicar-filtros:hover,
+body.dark-mode .btn-categoria.active:hover {
+    background-color: #4490e1; /* Botones azules más claros al pasar el mouse */
+    color: #fff; /* Texto blanco */
+}
+body.dark-mode .campo input,
+body.dark-mode .campo select,
+body.dark-mode #search-input,
+body.dark-mode .filtro-grupo input[type="range"],
+body.dark-mode .filtro-grupo input[type="checkbox"] {
+    background-color: #666; /* Fondo oscuro para inputs */
+    color: #fff; /* Texto blanco */
+    border-color: #777; /* Bordes más claros en modo oscuro */
+}
+body.dark-mode .campo input::placeholder,
+body.dark-mode #search-input::placeholder {
+    color: #ccc; /* Placeholder más claro en modo oscuro */
+}
+
+/* Enlaces en modo oscuro */
+body.dark-mode .categorias a,
+body.dark-mode .productos-destacados a,
+body.dark-mode .armar-pc a,
+body.dark-mode .testimonios a,
+body.dark-mode .newsletter a {
+    color: #fff; /* Enlaces blancos */
+}
+body.dark-mode .categorias a:hover,
+body.dark-mode .productos-destacados a:hover,   
+body.dark-mode .armar-pc a:hover,
+body.dark-mode .testimonios a:hover,
+body.dark-mode .newsletter a:hover {
+    color: #4490e1; /* Enlaces azules al pasar el mouse */
+}
+body.dark-mode .header-icons button,
+body.dark-mode .header-icons a {
+    color: #fff; /* Íconos blancos en el header */
+}
+body.dark-mode .header-icons button:hover,
+body.dark-mode .header-icons a:hover {
+    color: #4490e1; /* Íconos azules al pasar el mouse */
+}
+/* Estilo para mensajes de error en modo oscuro */
+body.dark-mode .error-msg {
+    color: #ff6b6b; /* Color rojo más claro para errores */
+    display: block; /* Asegura que el mensaje de error sea visible */
+}   
