@@ -1,6 +1,6 @@
 /*Datos de ejemplo (simulacion de productos)*/
 const productos = [
-    { id: 1, nombre: "Procesador Intel i7", precio: 350, categoria: "cpu", imagen: "assets/cpu1.webp" },
+    { id: 1, nombre: "Procesador Intel i7", precio: 350, categoria: "cpu", imagen: "./assets/images/Airiculares/compragamer_Imganen_general_11163_Auriculares_Redragon_Ares_H120_PC_978c684a.jpg" },
     { id: 2, nombre: "GeForce RTX 4070", precio: 600, categoria: "gpu", imagen: "assets/gpu1.webp" },
     { id: 3, nombre: "Memoria RAM 16GB DDR4", precio: 80, categoria: "ram", imagen: "assets/ram1.webp" },
     { id: 4, nombre: "SSD 1TB NVMe", precio: 120, categoria: "almacenamiento", imagen: "assets/ssd1.webp" },
