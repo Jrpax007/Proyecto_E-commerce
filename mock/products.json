@@ -1,6 +1,9 @@
 [
-    {"id":1, "nombre": "Auricular", "precio": 500, "img": ["./assets/images/Auriculares/1.jpg"]}
-
+    {"id":1, "nombre": "Auricular", "precio": 500, "img": ["./assets/images/Auriculares/1.jpg"]},
+    {"id":2, "nombre": "Auricular", "precio": 600, "img": ["./assets/images/Auriculares/2.jpg"]},
+    {"id":3, "nombre": "Auricular", "precio": 700, "img": ["./assets/images/Auriculares/3.jpg"]},
+    {"id":4, "nombre": "Auricular", "precio": 800, "img": ["./assets/images/Auriculares/4.jpg"]},
+    {"id":5, "nombre": "Auricular", "precio": 1000, "img": ["./assets/images/Auriculares/5.jpg"]}
 
 
 
