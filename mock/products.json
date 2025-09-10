@@ -1,10 +1,8 @@
-[
-    {"id":1, "nombre": "Auricular", "precio": 500, "img": ["./assets/images/Auriculares/1.jpg"]},
-    {"id":2, "nombre": "Auricular", "precio": 600, "img": ["./assets/images/Auriculares/2.jpg"]},
-    {"id":3, "nombre": "Auricular", "precio": 700, "img": ["./assets/images/Auriculares/3.jpg"]},
-    {"id":4, "nombre": "Auricular", "precio": 800, "img": ["./assets/images/Auriculares/4.jpg"]},
-    {"id":5, "nombre": "Auricular", "precio": 1000, "img": ["./assets/images/Auriculares/5.jpg"]}
+[   
+    {"id":6, "nombre": "Almacenamiento-solido", "precio": 1200, "img": ["./assets/images/Almacenamiento/Solido/1.jpg"]},
+    {"id":7, "nombre": "Almacenamiento-solido", "precio": 1400, "img": ["./assets/images/Almacenamiento/Solido/2.jpg"]},
+    {"id":8, "nombre": "Almacenamiento-solido", "precio": 1100, "img": ["./assets/images/Almacenamiento/Solido/3.jpg"]},
+    {"id":9, "nombre": "Almacenamiento-solido", "precio": 9000, "img": ["./assets/images/Almacenamiento/Solido/4.jpg"]},
+    {"id":10, "nombre": "Almacenamiento-solido", "precio":18000, "img": ["./assets/images/Almacenamiento/Solido/5.jpg"]}
 
-
-
-]
+] 
