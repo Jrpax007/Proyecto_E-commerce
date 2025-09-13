@@ -18,6 +18,11 @@ h1 {
   text-align: center;
   margin-bottom: 30px;
 }
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
 
 /* Contenedor de productos con grid */
 .productos-container {
