@@ -1,8 +1,119 @@
 [   
-    {"id":6, "nombre": "Almacenamiento-solido", "precio": 1200, "img": ["./assets/images/Almacenamiento/Solido/1.jpg"]},
-    {"id":7, "nombre": "Almacenamiento-solido", "precio": 1400, "img": ["./assets/images/Almacenamiento/Solido/2.jpg"]},
-    {"id":8, "nombre": "Almacenamiento-solido", "precio": 1100, "img": ["./assets/images/Almacenamiento/Solido/3.jpg"]},
-    {"id":9, "nombre": "Almacenamiento-solido", "precio": 9000, "img": ["./assets/images/Almacenamiento/Solido/4.jpg"]},
-    {"id":10, "nombre": "Almacenamiento-solido", "precio":18000, "img": ["./assets/images/Almacenamiento/Solido/5.jpg"]}
+    {
+    "id": 1,
+    "nombre": "Auricular",
+    "categoria": "Auricular",
+    "precio": 500,
+    "img": [
+      "https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757264078/compragamer_Imganen_general_9279_Auriculares_Logitech_H390_Black_USB_5f2c0ee3_guwvl1.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Auricular",
+    "categoria": "Auricular",
+    "precio": 600,
+    "img": [
+      "https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757264077/compragamer_Imganen_general_45871_Auriculares_SteelSeries_Arctis_Nova_PRO_Dualconnect_Wireless_2.4Ghz_Bluetooth_Infinity_Power_System_44Hs_Hot-swap_XBOX_PC_MAC_Switch_be11f788_eh7prd.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Auricular",
+    "categoria": "Auricular",
+    "precio": 700,
+    "img": [
+      "https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757264071/compragamer_Imganen_general_45869_Auriculares_SteelSeries_Arctis_Nova_PRO_Dualconnect_Wireless_2.4Ghz_Bluetooth_Infinity_Power_System_44Hs_Hot-swap_PS_PC_MAC_Switch_be11f788_kgf10t.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Auricular",
+    "categoria": "Auricular",
+    "precio": 800,
+    "img": [
+      "https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757264071/compragamer_Imganen_general_45865_Auriculares_SteelSeries_Arctis_Nova_7X_Wireless_2.4Ghz_Bluetooth_Black_USB-C_38Hs_XBOX_PC_MAC_Switch_8dce7c09_pww1rp.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Auricular",
+    "categoria": "Auricular",
+    "precio": 1000,
+    "img": [
+      "https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757264065/compragamer_Imganen_general_45863_Auriculares_SteelSeries_Arctis_Nova_7P_Wireless_2.4Ghz_Bluetooth_Black_USB-C_38Hs_PS_PC_MAC_Switch_9b0aa0ca_siyyg9.jpg"
+    ]
+  },
+
+    {"id":6, "nombre": "Almacenamiento-solido", "categoria": "Almacenamiento-solido", "precio": 1200, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265544/compragamer_Imganen_general_33784_Disco_Solido_SSD_Team_1TB_T-Force_Vulcan_Z_550MB_s_26f71eeb_dliueu.jpg"]},
+    {"id":7, "nombre": "Almacenamiento-solido", "categoria": "Almacenamiento-solido","precio": 1400, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265543/compragamer_Imganen_general_21725_Disco_Solido_SSD_Team_256GB_CX2_520MB_s_afa2afde_rkhrxy.jpg"]},
+    {"id":8, "nombre": "Almacenamiento-solido", "categoria": "Almacenamiento-solido","precio": 1100, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265524/compragamer_Imganen_general_18770_Disco_Solido_SSD_M.2_Team_512GB_MP33_1700MB_s_NVMe_PCI-E_Gen3_x4_2ce6c326_wvuiyb.jpg"]},
+    {"id":9, "nombre": "Almacenamiento-solido", "categoria": "Almacenamiento-solido","precio": 9000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265513/compragamer_Imganen_general_11198_Disco_S__lido_SSD_WD_480GB_GREEN_545MB_s_SATA_401cd02f_w80lov.jpg"]},
+    {"id":10, "nombre": "Almacenamiento-solido", "categoria": "Almacenamiento-solido","precio":18000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265496/compragamer_Imganen_general_11123_Disco_S__lido_SSD_Kingston_960GB_A400_500MB_s_9c46a94b_d0vms8.jpg"]},
+    
+    {"id":11, "nombre": "Almacenamiento-rigido", "categoria": "Almacenamiento-rigido", "precio": 12000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265495/compragamer_Imganen_general_45030_Disco_Rigido_WD_8TB_Purple_Pro_7.2K_RPM_256MB_WD8002PURP_50d147ba_dh72qf.jpg"]},
+    {"id":12, "nombre": "Almacenamiento-rigido", "categoria": "Almacenamiento-rigido","precio": 13000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265480/compragamer_Imganen_general_35996_Disco_Rigido_WD_2TB_BLUE_256MB_SATA_6.0GB_s_7200RPM_dc36f8f5_ygarj4.jpg"]},
+    {"id":13, "nombre": "Almacenamiento-rigido", "categoria": "Almacenamiento-rigido","precio": 14000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265479/compragamer_Imganen_general_28442_Disco_R__gido_Seagate_2TB_Barracuda_256MB_7.2K_RPM_86dd0248_sdncpb.jpg"]},
+    {"id":14, "nombre": "Almacenamiento-rigido", "categoria": "Almacenamiento-rigido","precio": 15000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265463/compragamer_Imganen_general_26764_Disco_Rigido_WD_6TB_Purple_5.6K_RPM_256MB_29fdc27d_mpzumb.jpg"]},
+    {"id":15, "nombre": "Almacenamiento-rigido", "categoria": "Almacenamiento-rigido","precio": 16000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265446/compragamer_Imganen_general_25933_Disco_R__gido_WD_8TB_PURPLE_256MB_SATA_6.0GB_s_ab6fe82a_wpdodc.jpg"]},
+    
+    {"id":16, "nombre": "Cooler-fan", "categoria": "Cooler-fan","precio": 1200, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757263750/compragamer_Imganen_general_46289_Cooler_Fan_DeepCool_RF120_FS_120mm_Fixed_RGB_KIT_x3_dd12f05c_hkcy96.jpg"]},
+    {"id":17, "nombre": "Cooler-fan", "categoria": "Cooler-fan","precio": 1400, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757263748/compragamer_Imganen_general_44713_Cooler_Fan_ID-Cooling_120mm_TF-12025-PRO_ARGB_Black_7282a0e6_fjzrum.jpg"]},
+    {"id":18, "nombre": "Cooler-fan", "categoria": "Cooler-fan","precio": 1100, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757263747/compragamer_Imganen_general_44649_Cooler_Fan_ID-Cooling_120mm_AS-120-ARGB-W_White_ARGB_5b8bce23_kbbcfw.jpg"]},
+    {"id":19, "nombre": "Cooler-fan", "categoria": "Cooler-fan","precio": 9000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757263744/compragamer_Imganen_general_42626_Cooler_Fan_ID-Cooling_120mm_AF-127-ARGB-K_TRIO_Black_Pack_x3_4b672015_pka4cw.jpg"]},
+    {"id":20, "nombre": "Cooler-fan", "categoria": "Cooler-fan","precio":18000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757263740/compragamer_Imganen_general_39458_Cooler_Fan_ID-Cooling_120mm_TF-12025-PRO_Black__58b06ddd_eqwg9l.jpg"]},
+    
+    {"id":21, "nombre": "Fuente", "categoria": "Fuente","precio": 12000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265431/compragamer_Imganen_general_48299_Fuente_Thermaltake_Smart_RGB_600W_RGB_80_Plus_White_9e63b06e_scrqge.jpg"]},
+    {"id":22, "nombre": "Fuente", "categoria": "Fuente","precio": 13000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265430/compragamer_Imganen_general_48296_Fuente_Thermaltake_Smart_RGB_700W_RGB_80_Plus_White_2d217692_tkoyy7.jpg"]},
+    {"id":23, "nombre": "Fuente", "categoria": "Fuente","precio": 14000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265415/compragamer_Imganen_general_48295_Fuente_Segotep_500W_23A_Cooler_120mm_Black_ATX-500W_f244a3b9_vp6ykq.jpg"]},
+    {"id":24, "nombre": "Fuente", "categoria": "Fuente","precio": 15000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265414/compragamer_Imganen_general_47751_Fuente_Gigabyte_1000W_80_Plus_Gold_UD1000GM_PG5_Full_Modular_ATX_3.0_PCIe_5.0__20e1e468_ytj2nu.jpg"]},
+    {"id":25, "nombre": "Fuente", "categoria": "Fuente","precio": 16000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265400/compragamer_Imganen_general_47744_Fuente_Gigabyte_850W_80_Plus_Gold_UD850GM_PG5_Full_Modular_ATX_3.0_PCIe_5.0__059b15c7_fy8gxx.jpg"]},
+
+    {"id":26, "nombre": "Gabinete", "categoria": "Gabinete","precio": 1200, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265214/compragamer_Imganen_general_47402_Gabinete_ASUS_ProArt_PA602_Professional_Mesh_Vidrio_Templado_Wood_Edition_Mid_Tower__35a14976_ycns1t.jpg"]},
+    {"id":27, "nombre": "Gabinete", "categoria": "Gabinete","precio": 1400, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265201/compragamer_Imganen_general_47237_Gabinete_Antec_FLUX_SE_4x120mm__1x140mm_PWM_Fans_USB-C_Wood_f0606e48_i9gdh2.jpg"]},
+    {"id":28, "nombre": "Gabinete", "categoria": "Gabinete","precio": 1100, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265184/compragamer_Imganen_general_47044_Gabinete_Be_Quiet__PURE_BASE_501_Airflow_Window_Black_2x140mm_Pure_Wings_3_Fans_USB-C_3ffdbb72_fqmg9k.jpg"]},
+    {"id":29, "nombre": "Gabinete", "categoria": "Gabinete","precio": 9000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757265142/compragamer_Imganen_general_46865_Gabinete_XYZ_NEUTRON_Black_4x120mm_AURAX_ARGB_Fans_LCD_Display_Inc._Controladora_Dual_Chamber_4f6e9757_t185jx.jpg"]},
+    {"id":30, "nombre": "Gabinete", "categoria": "Gabinete","precio":18000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757264893/compragamer_Imganen_general_44957_Gabinete_Thermaltake_CTE_E660_MX_Racing_Green_Incl._Cable_Riser_PCIe_4.0_Vidrio_Templado_USB-C_24ffff51_n3stij.jpg"]},
+    
+    {"id":31, "nombre": "Grafica", "categoria": "Grafica","precio": 12000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757934538/5-grafica_a3fbqp.jpg"]},
+    {"id":32, "nombre": "Grafica", "categoria": "Grafica","precio": 13000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757934534/4-grafica_nxykmw.jpg"]},
+    {"id":33, "nombre": "Grafica", "categoria": "Grafica","precio": 14000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757934530/3-grafica_lhgy3f.jpg"]},
+    {"id":34, "nombre": "Grafica", "categoria": "Grafica","precio": 15000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757934525/1-grafica_ujs0fx.jpg"]},
+    {"id":35, "nombre": "Grafica", "categoria": "Grafica","precio": 16000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757266125/compragamer_Imganen_general_30032_Placa_de_Video_Asrock_Radeon_RX_6600_8GB_GDDR6_Challenger_D_81d2bbe7_nuzxa1.jpg"]},
+
+    
+    {"id":36, "nombre": "Memorias", "categoria": "Memorias","precio": 1200, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757267299/compragamer_Imganen_general_43231_Memoria_Patriot_DDR5_32GB__2x16GB__7400MHz_Viper_Venom_RGB_CL36_Intel_XMP_3.0__0b289493_ozpzlw.jpg"]},
+    {"id":37, "nombre": "Memorias", "categoria": "Memorias","precio": 1400, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757267252/compragamer_Imganen_general_43225_Memoria_Patriot_DDR5_32GB__2x16GB__7800MHz_Viper_XTREME_RGB_CL38_Intel_XMP_3.0_8f56344b_wjsxt9.jpg"]},
+    {"id":38, "nombre": "Memorias", "categoria": "Memorias","precio": 1100, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757267252/compragamer_Imganen_general_43192_Memoria_Patriot_DDR5_32GB__2x16GB__7000MHz_Viper_ELITE_5_RGB_White_CL32_Intel_XMP_3.0_96593b87_mncpf0.jpg"]},
+    {"id":39, "nombre": "Memorias", "categoria": "Memorias","precio": 9000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757267210/compragamer_Imganen_general_43071_Memoria_Patriot_DDR5_16GB_6000MHz_Viper_Black_CL30_Intel_XMP_3.0___AMD_EXPO_a6ff2942_v2qjr0.jpg"]},
+    {"id":40, "nombre": "Memorias", "categoria": "Memorias","precio":18000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757267209/compragamer_Imganen_general_42429_Memoria_Team_DDR5_16GB_6000MHz_T-Force_Delta_RGB_Black_CL38_Intel_XMP_3.0___AMD_EXPO_4b24e79b_rjqzgm.jpg"]},    
+    {"id":41, "nombre": "Memorias", "categoria": "Memorias","precio": 12000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757267209/compragamer_Imganen_general_42315_Memoria_ADATA_DDR5_32GB__2x16GB__6400MHz_XPG_Caster_RGB_Black_CL32_Intel_XMP_3.0_6db5acf6_btbtoh.jpg"]},
+
+    {"id":42, "nombre": "Monitor", "categoria": "Monitor","precio": 13000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935289/5-monitor_x25e3p.jpg"]},
+    {"id":43, "nombre": "Monitor", "categoria": "Monitor","precio": 14000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935284/4-monitor_qv3aew.jpg"]},
+    {"id":44, "nombre": "Monitor", "categoria": "Monitor","precio": 15000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935279/3-monitor_t0qwu9.jpg"]},
+    {"id":45, "nombre": "Monitor", "categoria": "Monitor","precio": 16000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935274/2-monitor_p8caom.jpg"]},
+    {"id":46, "nombre": "Monitor", "categoria": "Monitor","precio": 1200, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935271/1-monitor_spsgmf.jpg"]},
+    {"id":47, "nombre": "Monitor", "categoria": "Monitor","precio": 1400, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757264092/compragamer_Imganen_general_33354_Monitor_LG_26WQ500-B_26__UltraWide_21_9_FHD_75Hz_IPS_161a12c9_ts5esp.jpg"]},
+
+    {"id":48, "nombre": "Mouse", "categoria": "Mouse","precio": 1100, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757933575/1-mouse_fc0ihy.jpg"]},
+    {"id":49, "nombre": "Mouse", "categoria": "Mouse","precio": 9000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757933573/5-mouse_uwzvy9.jpg"]},
+    {"id":50, "nombre": "Mouse", "categoria": "Mouse","precio":18000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757933573/4-mouse_hb22ta.jpg"]},    
+    {"id":51, "nombre": "Mouse", "categoria": "Mouse","precio": 12000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757933573/2-mouse_um7sxv.jpg"]},
+    {"id":52, "nombre": "Mouse", "categoria": "Mouse","precio": 13000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757933573/3-mouse_ocibqe.jpg"]},
+
+    {"id":53, "nombre": "Mouse-pad", "categoria": "Mouse-pad","precio": 14000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757258286/compragamer_Imganen_general_16271_Mouse_Pad_ASUS_ROG_Balteus_QI_NH01_Carga_Inalambrica_RGB_AuraSync_370x320mm_f5c87df6_ggoha3.jpg"]},
+    {"id":54, "nombre": "Mouse-pad", "categoria": "Mouse-pad","precio": 15000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757257085/compragamer_Imganen_general_12062_Mouse_Pad_Logitech_G_Powerplay_Carga_Inalambrica_321x344mm_1d5daeb5_ywy9st.jpg"]},
+    
+    {"id":55, "nombre": "Procesador", "categoria": "Procesador","precio": 16000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936030/8-procesador_ekjttk.jpg"]},
+    {"id":56, "nombre": "Procesador", "categoria": "Procesador","precio": 1200, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936024/7-procesador_hwbnts.jpg"]},
+    {"id":57, "nombre": "Procesador", "categoria": "Procesador","precio": 1400, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936022/6-procesador_vkhrip.jpg"]},
+    {"id":58, "nombre": "Procesador", "categoria": "Procesador","precio": 1100, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936014/5-procesador_zt2m4a.jpg"]},
+    {"id":59, "nombre": "Procesador", "categoria": "Procesador","precio": 9000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936009/4-procesador_p3qzcn.jpg"]},
+    {"id":60, "nombre": "Procesador", "categoria": "Procesador","precio":18000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936003/3-procesador_kydc8b.jpg"]},    
+    {"id":61, "nombre": "Procesador", "categoria": "Procesador","precio": 12000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935997/2-procesador_b4vksn.jpg"]},
+    {"id":62, "nombre": "Procesador", "categoria": "Procesador","precio": 13000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935994/1-procesador_aowhrt.jpg"]}
+
+
 
 ] 
