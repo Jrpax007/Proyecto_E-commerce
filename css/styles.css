@@ -1845,6 +1845,8 @@ input[type="checkbox"] {
 .contenido-armador {
     padding: var(--espaciado-xl) 0;
 }   
+
+#grid-contedor-armador,
 .layout-armador {
     display: grid;
     grid-template-columns: 1fr 350px;
