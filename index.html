@@ -1,216 +1,332 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-tema="claro">
+<!-- 
+    TRABAJO PRÁCTICO - PROGRAMACIÓN II
+    Página Principal - Tienda de Componentes de PC
+    Estructura semántica HTML5 con accesibilidad ARIA
+-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Tienda de Componentes</title>
-    <!-- Enlace al archivo CSS -->
+    <title>ComponentesPC - Tienda de Componentes</title>
+    <meta name="description" content="Tienda especializada en componentes de computadoras. Procesadores, tarjetas gráficas, memorias y más.">
+    
+    <!-- Hojas de estilo -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/webp" href="assets/icons/icono-favicon.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header -->
-    <header id="main-header" class="header">
-        <div class="logo">
-            <a href="index.html"><img src="/assets/icons/Proyecto nuevo.webp" alt="Logo"></a>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/pages/productos.html">Productos</a></li>
-                <li><a href="/pages/armador.html">Armar PC</a></li>
-                <li><a href="/pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <!-- Busqueda de productos -->
-        <div class="header-icons">
-            <!--Busqueda de productos-->
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="Buscar productos...">
-                <button id="search-button" class="search-icon-button" aria-label="Buscar">
-                    <!-- Ícono de lupa SVG (funciona evento click en js) -->
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M21 20l-4.35-4.35a7.5 7.5 0 1 0-1.41 1.41L20 21zM4 10.5a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0z" />
-                    </svg>
-                </button>
+    <!-- Encabezado Principal -->
+    <header class="encabezado-principal" role="banner">
+        <div class="contenedor encabezado-contenedor">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html" aria-label="Página principal - ComponentesPC">
+                    <img src="/assets/icons/Proyecto nuevo.webp" alt="Logo ComponentesPC" width="40" height="40">
+                    <span class="texto-logo">ComponentesPC</span>
+                </a>
             </div>
-<<<<<<< HEAD
-            <!-- CARRITO -->
-            <a href="carrito.html"><img src="/assets/icons/Proyecto nuevo.webp" alt="Carrito">Carrito</a>
-        </div>
-    </header>
-    <!-- Carrusel -->
-=======
-            <a href="carrito.html"><img src="assets/cart-icon.svg" alt="Carrito"></a>
-        </div>
-    </header>
-    <main>
-            <!-- Carrusel -->
->>>>>>> Jr_branch
-    <section class="carousel">
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <img src="/assets/images/pngwing.com.png" alt="1" />
-                <img src="/assets/images/pngwing.com - copia.png" alt="2" />
-                <img src="/assets/images/pngwing.com - copia (2).png" alt="3" />
-                <img src="/assets/images/pngwing.com - copia (3).png" alt="4" />
-                <!-- Repetimos las imágenes para que la cinta sea larga y fluida -->
-                <img src="/assets/images/pngwing.com.png" alt="1" />
-                <img src="/assets/images/pngwing.com - copia.png" alt="2" />
-                <img src="/assets/images/pngwing.com - copia (2).png" alt="3" />
-                <img src="/assets/images/pngwing.com - copia (3).png" alt="4" />
-                <!-- Repetimos las imágenes para que la cinta sea larga y fluida -->
-                <img src="/assets/images/pngwing.com.png" alt="1" />
-                <img src="/assets/images/pngwing.com - copia.png" alt="2" />
-                <img src="/assets/images/pngwing.com - copia (2).png" alt="3" />
-                <img src="/assets/images/pngwing.com - copia (3).png" alt="4" />
-            </div>
-        </div>
-    </section>
-    <!-- Categorías -->
-    <section class="categorias">
-        <h2>Categorías</h2>
-        <div class="categorias-grid">
-            <a href="#" class="categoria-card">
-                <img src="/assets/images/pngwing.com.png" alt="Procesadores">
-                <span>Procesadores</span>
-            </a>
-            <a href="#" class="categoria-card">
-                <img src="/assets/images/pngwing.com.png" alt="Placas de Video">
-                <span>Placas de Video</span>
-            </a>
-            <a href="#" class="categoria-card">
-                <img src="/assets/images/pngwing.com.png" alt="Memorias RAM">
-                <span>Memorias RAM</span>
-            </a>
-            <a href="#" class="categoria-card">
-                <img src="/assets/images/pngwing.com.png" alt="Motherboards">
-                <span>Motherboards</span>
-            </a>
-            <a href="#" class="categoria-card">
-                <img src="/assets/images/pngwing.com.png" alt="Gabinetes">
-                <span>Gabinetes</span>
-            </a>
-            <a href="#" class="categoria-card">
-                <img src="/assets/images/pngwing.com.png" alt="Fuentes">
-                <span>Fuentes</span>
-            </a>
-            <a href="#" class="categoria-card">
-                <img src="/assets/images/pngwing.com.png" alt="Refrigeracion">
-                <span>Refrigeración</span>
-            </a>
-            <a href="#" class="categoria-card">
-                <img src="/assets/images/pngwing.com.png" alt="Almacenamiento">
-                <span>Almacenamiento</span>
-            </a>
-        </div>
-    </section>
-<<<<<<< HEAD
-    <!-- Redireccionamiento Armado de PC -->
-=======
-    <!-- Armar PC -->
->>>>>>> Jr_branch
-    <section class="armar-pc">
-        <h2>Arma tu PC</h2>
-        <p>Utiliza nuestro armador de PC para seleccionar los componentes que mejor se adapten a tus necesidades y
-            presupuesto.</p>
-        <a href="/pages/armador.html" class="btn-armar-pc">Ir al Armador de PC</a>
-    </section>
-    <!-- Productos Destacados -->
-    <section class="productos-destacados">
-        <h2>Productos Destacados</h2>
-        <div class="productos-grid">
-            <div class="producto-card">
-                <img src="/assets/images/pngwing.com.png" alt="Producto 1">
-                <h3>Producto 1</h3>
-                <p class="precio">$100.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="producto-card">
-                <img src="/assets/images/pngwing.com.png" alt="Producto 2">
-                <h3>Producto 2</h3>
-                <p class="precio">$150.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="producto-card">
-                <img src="/assets/images/pngwing.com.png" alt="Producto 3">
-                <h3>Producto 3</h3>
-                <p class="precio">$200.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="producto-card">
-                <img src="/assets/images/pngwing.com.png" alt="Producto 4">
-                <h3>Producto 4</h3>
-                <p class="precio">$250.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-    </section>
-<<<<<<< HEAD
-    <!-- Suscripción Newsletter -->
-=======
-    <!-- Newsletter -->
->>>>>>> Jr_branch
-    <section class="newsletter">
-        <h2>Suscríbete a nuestro Newsletter</h2>
-        <p>Recibe las últimas noticias y ofertas directamente en tu correo.</p>
-        <form id="newsletter-form">
-            <input type="email" id="newsletter-email" placeholder="Tu correo electrónico" required>
-            <button type="submit">Suscribirse</button>
-        </form>
-    </section>
-    <!-- Testimonios -->
-    <section class="testimonios">
-        <h2>Testimonios</h2>
-        <div class="testimonios-grid">
-            <div class="testimonio-card">
-                <p>"Excelente servicio y productos de calidad. ¡Muy recomendable!"</p>
-                <h4 class="autor">- Juan Pérez</h4>
-            </div>
-            <div class="testimonio-card">
-                <p>"Gran variedad de componentes y precios competitivos."</p>
-                <h4 class="autor">- María Gómez</h4>
-            </div>
-            <div class="testimonio-card">
-                <p>"Me ayudaron a armar mi PC y quedó increíble. ¡Gracias!"</p>
-                <h4 class="autor">- Carlos Rodríguez</h4>
-            </div>
-        </div>
 
-    </section>
+            <!-- Menú Hamburguesa -->
+            <button class="menu-hamburguesa" id="boton-menu-movil" aria-label="Abrir menú principal" aria-expanded="false">
+                <span class="linea-hamburguesa"></span>
+                <span class="linea-hamburguesa"></span>
+                <span class="linea-hamburguesa"></span>
+            </button>
+
+            <!-- Navegación Principal -->
+            <nav class="navegacion-principal" id="navegacion-principal" aria-label="Navegación principal">
+                <ul class="lista-navegacion">
+                    <li><a href="index.html" class="enlace-navegacion activo" aria-current="page">Inicio</a></li>
+                    <li><a href="pages/productos.html" class="enlace-navegacion">Productos</a></li>
+                    <li><a href="pages/armador.html" class="enlace-navegacion">Armar PC</a></li>
+                    <li><a href="pages/contacto.html" class="enlace-navegacion">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Controles del Encabezado -->
+            <div class="controles-encabezado">
+                <!-- Sistema de Búsqueda -->
+                <div class="contenedor-busqueda">
+                    <input type="text" id="busqueda-global" placeholder="Buscar productos..." aria-label="Campo de búsqueda">
+                    <button id="boton-buscar" class="boton-busqueda" aria-label="Realizar búsqueda">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <!-- Selector de Tema -->
+                <button class="selector-tema" id="selector-tema" aria-label="Cambiar entre modo claro y oscuro">
+                    <i class="bi bi-moon-fill icono-tema"></i>
+                </button>
+
+                <!-- Ícono del Carrito -->
+                <div class="contenedor-carrito">
+                    <a href="pages/carrito.html" class="enlace-carrito" aria-label="Ver carrito de compras">
+                        <i class="bi bi-cart3"></i>
+                        <span class="contador-carrito" id="contador-carrito-global">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="contenido-principal" role="main">
+        <!-- Sección Hero -->
+        <section class="seccion-hero" aria-labelledby="titulo-hero">
+            <div class="fondo-hero">
+                <div class="overlay-hero"></div>
+            </div>
+            <div class="contenedor contenido-hero">
+                <h1 id="titulo-hero" class="titulo-hero">Construye tu PC <span class="texto-degradado">Perfecta</span></h1>
+                <p class="descripcion-hero">Encuentra los mejores componentes y arma la computadora de tus sueños con nuestro asistente especializado.</p>
+                <div class="acciones-hero">
+                    <a href="pages/productos.html" class="boton boton-primario boton-grande">
+                        <i class="bi bi-arrow-right"></i> Explorar Productos
+                    </a>
+                    <a href="pages/armador.html" class="boton boton-secundario boton-grande">
+                        <i class="bi bi-cpu"></i> Armar Mi PC
+                    </a>
+                </div>
+            </div>
+            <div class="indicador-desplazamiento">
+                <i class="bi bi-chevron-double-down"></i>
+            </div>
+        </section>
+
+        <!-- Sección Categorías -->
+        <section class="seccion-categorias" aria-labelledby="titulo-categorias">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <h2 id="titulo-categorias" class="titulo-seccion">Categorías Principales</h2>
+                    <p class="subtitulo-seccion">Explora nuestras categorías más populares</p>
+                </div>
+
+                <div class="grid-categorias">
+                    <!-- Tarjetas de categorías -->
+                    <a href="pages/productos.html?categoria=cpu" class="tarjeta-categoria">
+                        <div class="imagen-categoria">
+                            <img src="assets/images/categorias/procesadores.webp" alt="Procesadores y CPUs" loading="lazy">
+                        </div>
+                        <div class="contenido-categoria">
+                            <h3>Procesadores</h3>
+                            <p>CPUs de alto rendimiento</p>
+                        </div>
+                    </a>
+
+                    <a href="pages/productos.html?categoria=gpu" class="tarjeta-categoria">
+                        <div class="imagen-categoria">
+                            <img src="assets/images/categorias/tarjetas-graficas.webp" alt="Tarjetas Gráficas" loading="lazy">
+                        </div>
+                        <div class="contenido-categoria">
+                            <h3>Tarjetas Gráficas</h3>
+                            <p>GPUs para gaming y diseño</p>
+                        </div>
+                    </a>
+
+                    <a href="pages/productos.html?categoria=ram" class="tarjeta-categoria">
+                        <div class="imagen-categoria">
+                            <img src="assets/images/categorias/memorias-ram.webp" alt="Memorias RAM" loading="lazy">
+                        </div>
+                        <div class="contenido-categoria">
+                            <h3>Memorias RAM</h3>
+                            <p>DDR4 y DDR5 de alta velocidad</p>
+                        </div>
+                    </a>
+
+                    <a href="pages/productos.html?categoria=almacenamiento" class="tarjeta-categoria">
+                        <div class="imagen-categoria">
+                            <img src="assets/images/categorias/almacenamiento.webp" alt="Discos y SSDs" loading="lazy">
+                        </div>
+                        <div class="contenido-categoria">
+                            <h3>Almacenamiento</h3>
+                            <p>SSDs y discos duros</p>
+                        </div>
+                    </a>
+
+                    <a href="pages/productos.html?categoria=motherboard" class="tarjeta-categoria">
+                        <div class="imagen-categoria">
+                            <img src="assets/images/categorias/motherboards.webp" alt="Placas Madre" loading="lazy">
+                        </div>
+                        <div class="contenido-categoria">
+                            <h3>Motherboards</h3>
+                            <p>Placas base para tu build</p>
+                        </div>
+                    </a>
+
+                    <a href="pages/productos.html?categoria=fuente" class="tarjeta-categoria">
+                        <div class="imagen-categoria">
+                            <img src="assets/images/categorias/fuentes-poder.webp" alt="Fuentes de Poder" loading="lazy">
+                        </div>
+                        <div class="contenido-categoria">
+                            <h3>Fuentes</h3>
+                            <p>Alimentación confiable</p>
+                        </div>
+                    </a>
+
+                                        <a href="pages/productos.html?categoria=fuente" class="tarjeta-categoria">
+                        <div class="imagen-categoria">
+                            <img src="assets/images/categorias/fuentes-poder.webp" alt="Fuentes de Poder" loading="lazy">
+                        </div>
+                        <div class="contenido-categoria">
+                            <h3>Fuentes</h3>
+                            <p>Alimentación confiable</p>
+                        </div>
+                    </a>
+
+                                        <a href="pages/productos.html?categoria=fuente" class="tarjeta-categoria">
+                        <div class="imagen-categoria">
+                            <img src="assets/images/categorias/fuentes-poder.webp" alt="Fuentes de Poder" loading="lazy">
+                        </div>
+                        <div class="contenido-categoria">
+                            <h3>Fuentes</h3>
+                            <p>Alimentación confiable</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Armador PC -->
+        <section class="seccion-armador" aria-labelledby="titulo-armador">
+            <div class="contenedor">
+                <div class="contenido-armador">
+                    <h2 id="titulo-armador" class="titulo-armador">¿No sabes por dónde empezar?</h2>
+                    <p class="descripcion-armador">Utiliza nuestro armador de PC para seleccionar componentes compatibles según tu presupuesto y necesidades.</p>
+                    <div class="caracteristicas-armador">
+                        <div class="caracteristica">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Compatibilidad garantizada</span>
+                        </div>
+                        <div class="caracteristica">
+                            <i class="bi bi-currency-dollar"></i>
+                            <span>Control de presupuesto</span>
+                        </div>
+                        <div class="caracteristica">
+                            <i class="bi bi-lightning-charge"></i>
+                            <span>Optimización de rendimiento</span>
+                        </div>
+                    </div>
+                    <a href="pages/armador.html" class="boton boton-primario boton-grande">
+                        <i class="bi bi-tools"></i> Comenzar a Armar
+                    </a>
+                </div>
+                <div class="imagen-armador">
+                    <img src="assets/images/armador-pc.webp" alt="Interfaz del Armador de PC" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Productos Destacados -->
+        <section class="seccion-productos-destacados" aria-labelledby="titulo-productos-destacados">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <h2 id="titulo-productos-destacados" class="titulo-seccion">Productos Destacados</h2>
+                    <p class="subtitulo-seccion">Lo más vendido esta semana</p>
+                </div>
+
+                <div class="grid-productos" id="grid-productos-destacados">
+                    <!-- Los productos se cargan dinámicamente -->
+                    <div class="tarjeta-producto esqueleto">
+                        <div class="imagen-esqueleto"></div>
+                        <div class="contenido-esqueleto"></div>
+                    </div>
+                    <div class="tarjeta-producto esqueleto">
+                        <div class="imagen-esqueleto"></div>
+                        <div class="contenido-esqueleto"></div>
+                    </div>
+                    <div class="tarjeta-producto esqueleto">
+                        <div class="imagen-esqueleto"></div>
+                        <div class="contenido-esqueleto"></div>
+                    </div>
+                    <div class="tarjeta-producto esqueleto">
+                        <div class="imagen-esqueleto"></div>
+                        <div class="contenido-esqueleto"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Newsletter -->
+        <section class="seccion-newsletter" aria-labelledby="titulo-newsletter">
+            <div class="contenedor">
+                <div class="contenido-newsletter">
+                    <h2 id="titulo-newsletter" class="titulo-newsletter">Mantente Actualizado</h2>
+                    <p class="descripcion-newsletter">Recibe las últimas novedades, ofertas exclusivas y tips de armado de PC.</p>
+                    <form class="formulario-newsletter" id="formulario-newsletter" aria-label="Formulario de suscripción">
+                        <div class="grupo-input">
+                            <input type="email" id="email-newsletter" placeholder="tu.email@ejemplo.com" required aria-label="Email para newsletter">
+                            <button type="submit" class="boton boton-primario">
+                                <i class="bi bi-envelope-check"></i> Suscribirme
+                            </button>
+                        </div>
+                        <p class="leyenda-newsletter">* Nos comprometemos a no spamear. Solo contenido de valor.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-col">
-            <h3>Nosotros</h3>
-            <ul>
-                <li><a href="#">Quiénes somos</a></li>
-                <li><a href="#">Términos y condiciones</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Categorías</h3>
-            <ul>
-                <li><a href="#">Procesadores</a></li>
-                <li><a href="#">Gabinetes</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Soporte</h3>
-            <ul>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Preguntas frecuentes</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Medios de pago</h3>
-            <img src="assets/payment-methods.webp" alt="Medios de pago">
+
+    <!-- Pie de Página -->
+    <footer class="pie-pagina" role="contentinfo">
+        <div class="contenedor">
+            <div class="grid-pie-pagina">
+                <div class="columna-pie">
+                    <h3>Nosotros</h3>
+                    <ul class="lista-pie">
+                        <li><a href="#">Quiénes Somos</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="columna-pie">
+                    <h3>Categorías</h3>
+                    <ul class="lista-pie">
+                        <li><a href="pages/productos.html?categoria=cpu">Procesadores</a></li>
+                        <li><a href="pages/productos.html?categoria=gpu">Tarjetas Gráficas</a></li>
+                        <li><a href="pages/productos.html?categoria=ram">Memorias RAM</a></li>
+                    </ul>
+                </div>
+
+                <div class="columna-pie">
+                    <h3>Soporte</h3>
+                    <ul class="lista-pie">
+                        <li><a href="pages/contacto.html">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+
+                <div class="columna-pie">
+                    <h3>Medios de Pago</h3>
+                    <img src="assets/images/medios-pago.webp" alt="Medios de pago aceptados" loading="lazy" class="imagen-medios-pago">
+                    <p class="texto-medios-pago">Aceptamos todas las tarjetas y transferencias</p>
+                </div>
+            </div>
+
+            <div class="separador-pie"></div>
+
+            <div class="pie-inferior">
+                <p class="copyright">&copy; 2024 ComponentesPC - Todos los derechos reservados</p>
+                <div class="redes-sociales">
+                    <a href="#" aria-label="Síguenos en Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Síguenos en Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Síguenos en Twitter"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
-    <!-- JAVASCRIPT -->
-    <script src="js/scripts.js"></script>
-</body>
 
+    <!-- Scripts externos -->
+    <script src="js/carga.js" defer></script>
+    <script src="js/toggle.js" defer></script>
+    <script src="js/carrito.js" defer></script>
+    <script src="js/api.js" type="module" defer></script>
+    <script src="js/productos.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+</body>
 </html>
