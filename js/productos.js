@@ -4,6 +4,9 @@ const contenedor = document.getElementById("productos-container");
 const selectorCategoria = document.getElementById("categorias");
 const btnFiltros = document.getElementById("btn-aplicar-filtros");
 
+const params = new URLSearchParams(window.location.search);
+const categoriaInicial = params.get("categoria");
+
 function cargarProductos(lista) {
   contenedor.innerHTML = ""; 
   lista.forEach(prod => {
@@ -37,11 +40,19 @@ async function init() {
   try {
     const productos = await obtenerProductos();
     cargarProductos(productos);
-
-    btnFiltros.addEventListener("click", ()=> {
+    if (categoriaInicial) {
+      selectorCategoria.value = categoriaInicial; // deja seleccionado el <option>
       filtrarProductos(productos);
-    })
-  } catch(error){
+    } else {
+      cargarProductos(productos);
+    }
+
+    // Escuchar el botón de filtros
+    btnFiltros.addEventListener("click", () => {
+      filtrarProductos(productos);
+    });
+
+  } catch (error) {
     console.error("Error cargando Productos.", error);
   }
 }

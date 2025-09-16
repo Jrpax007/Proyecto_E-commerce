@@ -112,8 +112,25 @@
     {"id":59, "nombre": "Procesador", "categoria": "Procesador","precio": 9000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936009/4-procesador_p3qzcn.jpg"]},
     {"id":60, "nombre": "Procesador", "categoria": "Procesador","precio":18000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936003/3-procesador_kydc8b.jpg"]},    
     {"id":61, "nombre": "Procesador", "categoria": "Procesador","precio": 12000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935997/2-procesador_b4vksn.jpg"]},
-    {"id":62, "nombre": "Procesador", "categoria": "Procesador","precio": 13000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935994/1-procesador_aowhrt.jpg"]}
+    {"id":62, "nombre": "Procesador", "categoria": "Procesador","precio": 13000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935994/1-procesador_aowhrt.jpg"]},
 
+    {"id":63, "nombre": "Procesador", "categoria": "Placa-madre","precio": 16000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/4-placa-madre_fhptm5.jpg"]},
+    {"id":64, "nombre": "Procesador", "categoria": "Placa-madre","precio": 1200, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/3-placa-madre_nxpsuf.jpg"]},
+    {"id":65, "nombre": "Procesador", "categoria": "Placa-madre","precio": 1400, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},
+    {"id":66, "nombre": "Procesador", "categoria": "Placa-madre","precio": 1100, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},
+    {"id":67, "nombre": "Procesador", "categoria": "Placa-madre","precio": 9000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},
+    {"id":68, "nombre": "Procesador", "categoria": "Placa-madre","precio":18000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},    
+    
+    {"id":69, "nombre": "Teclado", "categoria": "Teclado","precio": 12000, "img": [""]},
+    {"id":70, "nombre": "Teclado", "categoria": "Teclado","precio": 13000, "img": [""]},
+    {"id":71, "nombre": "Teclado", "categoria": "Teclado","precio": 12000, "img": [""]},
+    {"id":72, "nombre": "Teclado", "categoria": "Teclado","precio": 13000, "img": [""]},
+    {"id":73, "nombre": "Teclado", "categoria": "Teclado","precio": 12000, "img": [""]},
+    {"id":74, "nombre": "Teclado", "categoria": "Teclado","precio": 13000, "img": [""]},
+    {"id":75, "nombre": "Teclado", "categoria": "Teclado","precio": 12000, "img": [""]},
+    {"id":76, "nombre": "Teclado", "categoria": "Teclado","precio": 13000, "img": [""]},
+    {"id":77, "nombre": "Teclado", "categoria": "Teclado","precio": 12000, "img": [""]},
+    {"id":78, "nombre": "Teclado", "categoria": "Teclado","precio": 13000, "img": [""]}
 
 
 ] 
