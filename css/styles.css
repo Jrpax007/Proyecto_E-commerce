@@ -142,7 +142,6 @@ a:hover {
     padding: 0 var(--espaciado-md);
 }
 
-/*=========Marquee=============*/
 .contenedor-marquee {
     width: 100%;
     overflow: hidden;
