@@ -1,0 +1,267 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Procesador Intel Core i7-12700K",
+            "precio": 350,
+            "categoria": "cpu",
+            "img": "../assets/images/Procesadores/1.webp",
+            "descripcion": "Procesador Intel Core i7 de 12ma generación con 12 núcleos y 20 hilos",
+            "especificaciones": {
+                "socket": "LGA1700",
+                "nucleos": 12,
+                "hilos": 20,
+                "frecuencia": "3.6GHz",
+                "turbo": "5.0GHz",
+                "cache": "25MB",
+                "consumo": "125W"
+            },
+            "stock": 15,
+            "marca": "Intel"
+        },
+        {
+            "id": 2,
+            "nombre": "AMD Ryzen 7 5800X",
+            "precio": 300,
+            "categoria": "cpu",
+            "img": "../assets/images/Procesadores/2.webp",
+            "descripcion": "Procesador AMD Ryzen 7 de alto rendimiento para gaming y productividad",
+            "especificaciones": {
+                "socket": "AM4",
+                "nucleos": 8,
+                "hilos": 16,
+                "frecuencia": "3.8GHz",
+                "turbo": "4.7GHz",
+                "cache": "36MB",
+                "consumo": "105W"
+            },
+            "stock": 8,
+            "marca": "AMD"
+        },
+        {
+            "id": 3,
+            "nombre": "NVIDIA GeForce RTX 4070",
+            "precio": 600,
+            "categoria": "gpu",
+            "img": "../assets/images/Grafica/1.webp",
+            "descripcion": "Tarjeta gráfica NVIDIA RTX 4070 con 12GB GDDR6X",
+            "especificaciones": {
+                "vram": "12GB GDDR6X",
+                "bus": "192-bit",
+                "puertos": "3x DP, 1x HDMI",
+                "consumo": "200W",
+                "longitud": "300mm"
+            },
+            "stock": 5,
+            "marca": "NVIDIA"
+        },
+        {
+            "id": 4,
+            "nombre": "AMD Radeon RX 7800 XT",
+            "precio": 500,
+            "categoria": "gpu",
+            "img": "../assets/images/Grafica/2.webp",
+            "descripcion": "Tarjeta gráfica AMD Radeon RX 7800 XT con 16GB GDDR6",
+            "especificaciones": {
+                "vram": "16GB GDDR6",
+                "bus": "256-bit",
+                "puertos": "3x DP, 1x HDMI",
+                "consumo": "263W",
+                "longitud": "320mm"
+            },
+            "stock": 7,
+            "marca": "AMD"
+        },
+        {
+            "id": 5,
+            "nombre": "Memoria RAM Corsair 16GB DDR5",
+            "precio": 120,
+            "categoria": "ram",
+            "img": "../assets/images/Memorias/1.webp",
+            "descripcion": "Kit de memoria RAM 16GB DDR5 5200MHz",
+            "especificaciones": {
+                "capacidad": "16GB",
+                "tipo": "DDR5",
+                "frecuencia": "5200MHz",
+                "latencia": "CL40",
+                "color": "Negro"
+            },
+            "stock": 20,
+            "marca": "Corsair"
+        },
+        {
+            "id": 6,
+            "nombre": "SSD Samsung 1TB NVMe",
+            "precio": 100,
+            "categoria": "almacenamiento",
+            "img": "../assets/images/Almacenamiento/Solido/1.webp",
+            "descripcion": "Disco sólido SSD 1TB NVMe PCIe 4.0",
+            "especificaciones": {
+                "capacidad": "1TB",
+                "tipo": "NVMe PCIe 4.0",
+                "lectura": "7000MB/s",
+                "escritura": "5000MB/s",
+                "formato": "M.2 2280"
+            },
+            "stock": 12,
+            "marca": "Samsung"
+        },
+        {
+            "id": 7,
+            "nombre": "Motherboard ASUS ROG Strix B550",
+            "precio": 180,
+            "categoria": "motherboard",
+            "img": "../assets/images/Motherboard/1.webp",
+            "descripcion": "Placa madre ASUS ROG Strix para AMD AM4",
+            "especificaciones": {
+                "socket": "AM4",
+                "chipset": "B550",
+                "ramSlots": 4,
+                "ramTipo": "DDR4",
+                "m2Slots": 2,
+                "sataPorts": 6
+            },
+            "stock": 6,
+            "marca": "ASUS"
+        },
+        {
+            "id": 8,
+            "nombre": "Fuente Corsair 750W 80+ Gold",
+            "precio": 110,
+            "categoria": "fuente",
+            "img": "../assets/images/Fuente/1.webp",
+            "descripcion": "Fuente de poder 750W certificación 80+ Gold",
+            "especificaciones": {
+                "potencia": "750W",
+                "certificacion": "80+ Gold",
+                "modular": "Semi-modular",
+                "pciExpress": "4",
+                "sata": "8"
+            },
+            "stock": 9,
+            "marca": "Corsair"
+        },
+        {
+            "id": 9,
+            "nombre": "Gabinete NZXT H510",
+            "precio": 90,
+            "categoria": "gabinete",
+            "img": "../assets/images/Gabinete/1.webp",
+            "descripcion": "Gabinete mid-tower con diseño minimalista",
+            "especificaciones": {
+                "tipo": "Mid-Tower",
+                "maxGpuLength": "381mm",
+                "coolersIncluidos": "2",
+                "usbFrontal": "2x USB 3.0",
+                "color": "Negro"
+            },
+            "stock": 11,
+            "marca": "NZXT"
+        },
+        {
+            "id": 10,
+            "nombre": "Cooler CPU Noctua NH-D15",
+            "precio": 110,
+            "categoria": "refrigeracion",
+            "img": "../assets/images/Coolers/1.webp",
+            "descripcion": "Cooler de aire de alto rendimiento para CPU",
+            "especificaciones": {
+                "tipo": "Aire",
+                "socket": "Intel/AMD",
+                "ruido": "24.6dB",
+                "ventiladores": "2",
+                "altura": "165mm"
+            },
+            "stock": 4,
+            "marca": "Noctua"
+        },
+        {
+            "id": 11,
+            "nombre": "Procesador Intel Core i5-12600K",
+            "precio": 280,
+            "categoria": "cpu",
+            "img": "../assets/images/Procesadores/3.webp",
+            "descripcion": "Procesador Intel Core i5 de 12ma generación",
+            "especificaciones": {
+                "socket": "LGA1700",
+                "nucleos": 10,
+                "hilos": 16,
+                "frecuencia": "3.7GHz",
+                "turbo": "4.9GHz",
+                "cache": "20MB",
+                "consumo": "125W"
+            },
+            "stock": 10,
+            "marca": "Intel"
+        },
+        {
+            "id": 12,
+            "nombre": "AMD Ryzen 5 5600X",
+            "precio": 220,
+            "categoria": "cpu",
+            "img": "../assets/images/Procesadores/4.webp",
+            "descripcion": "Procesador AMD Ryzen 5 para gaming",
+            "especificaciones": {
+                "socket": "AM4",
+                "nucleos": 6,
+                "hilos": 12,
+                "frecuencia": "3.7GHz",
+                "turbo": "4.6GHz",
+                "cache": "35MB",
+                "consumo": "65W"
+            },
+            "stock": 14,
+            "marca": "AMD"
+        }
+    ],
+    "categorias": [
+        {
+            "id": "cpu",
+            "nombre": "Procesadores",
+            "descripcion": "Unidades centrales de procesamiento",
+            "cantidad": 4
+        },
+        {
+            "id": "gpu",
+            "nombre": "Tarjetas Gráficas",
+            "descripcion": "Unidades de procesamiento gráfico",
+            "cantidad": 2
+        },
+        {
+            "id": "ram",
+            "nombre": "Memoria RAM",
+            "descripcion": "Memoria de acceso aleatorio",
+            "cantidad": 1
+        },
+        {
+            "id": "motherboard",
+            "nombre": "Motherboards",
+            "descripcion": "Placas base para componentes",
+            "cantidad": 1
+        },
+        {
+            "id": "almacenamiento",
+            "nombre": "Almacenamiento",
+            "descripcion": "Discos duros y unidades SSD",
+            "cantidad": 1
+        },
+        {
+            "id": "fuente",
+            "nombre": "Fuentes de Poder",
+            "descripcion": "Fuentes de alimentación",
+            "cantidad": 1
+        },
+        {
+            "id": "gabinete",
+            "nombre": "Gabinetes",
+            "descripcion": "Cajas para componentes",
+            "cantidad": 1
+        },
+        {
+            "id": "refrigeracion",
+            "nombre": "Refrigeración",
+            "descripcion": "Sistemas de cooling",
+            "cantidad": 1
+        }
+    ]
+}

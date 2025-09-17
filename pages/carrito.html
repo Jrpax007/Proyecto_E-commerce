@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="claro">
+<!-- 
+    TRABAJO PRÁCTICO - PROGRAMACIÓN II
+    Página Carrito de Compras - Gestión de productos.
+    Funcionalidades: Modificar cantidades, aplicar cupones, checkout.
+    Estructura: Lista de productos + resumen de compra.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - ComponentesPC</title>
+    <meta name="description" content="Revisá y gestioná los productos en tu carrito de compras.">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/webp" href="../assets/icons/icono-favicon.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Encabezado Principal -->
+    <header class="encabezado-principal" role="banner">
+        <div class="contenedor encabezado-contenedor">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html" aria-label="Página principal - ComponentesPC">
+                    <img src="/assets/icons/Proyecto nuevo.webp" alt="Logo ComponentesPC" width="40" height="40">
+                    <span class="texto-logo">ComponentesPC</span>
+                </a>
+            </div>
+
+            <!-- Menú Hamburguesa -->
+            <button class="menu-hamburguesa" id="boton-menu-movil" aria-label="Abrir menú principal" aria-expanded="false">
+                <span class="linea-hamburguesa"></span>
+                <span class="linea-hamburguesa"></span>
+                <span class="linea-hamburguesa"></span>
+            </button>
+
+            <!-- Navegación Principal -->
+            <nav class="navegacion-principal" id="navegacion-principal" aria-label="Navegación principal">
+                <ul class="lista-navegacion">
+                    <li><a href="../index.html" class="enlace-navegacion">Inicio</a></li>
+                    <li><a href="productos.html" class="enlace-navegacion">Productos</a></li>
+                    <li><a href="armador.html" class="enlace-navegacion">Armar PC</a></li>
+                    <li><a href="contacto.html" class="enlace-navegacion">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Controles del Encabezado -->
+            <div class="controles-encabezado">
+                <!-- Sistema de Búsqueda -->
+                <div class="contenedor-busqueda">
+                    <input type="text" id="busqueda-global" placeholder="Buscar productos..." aria-label="Campo de búsqueda">
+                    <button id="boton-buscar" class="boton-busqueda" aria-label="Realizar búsqueda">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <!-- Selector de Tema -->
+                <button class="selector-tema" id="selector-tema" aria-label="Cambiar entre modo claro y oscuro">
+                    <i class="bi bi-moon-fill icono-tema"></i>
+                </button>
+
+                <!-- Ícono del Carrito -->
+                <div class="contenedor-carrito">
+                    <a href="carrito.html" class="enlace-carrito activo" aria-label="Ver carrito de compras" aria-current="page">
+                        <i class="bi bi-cart3"></i>
+                        <span class="contador-carrito" id="contador-carrito-global">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="contenido-principal contenido-carrito" role="main">
+        <div class="contenedor">
+            <!-- Encabezado de Página -->
+            <div class="encabezado-pagina">
+                <h1 class="titulo-pagina">Tu Carrito de Compras</h1>
+                <p class="descripcion-pagina">Revisá y modificá los productos en tu carrito</p>
+            </div>
+
+            <div class="layout-carrito">
+                <!-- Sección de Productos -->
+                <section class="seccion-productos-carrito" aria-labelledby="titulo-productos-carrito">
+                    <div class="encabezado-seccion-carrito">
+                        <h2 id="titulo-productos-carrito">Productos en el Carrito</h2>
+                        <button class="boton-vaciar-carrito" id="boton-vaciar-carrito" aria-label="Vaciar todo el carrito">
+                            <i class="bi bi-trash"></i> Vaciar Carrito
+                        </button>
+                    </div>
+
+                    <div class="lista-productos-carrito" id="lista-productos-carrito">
+                        <!-- Mensaje de carrito vacío -->
+                        <div class="mensaje-carrito-vacio" id="mensaje-carrito-vacio">
+                            <div class="icono-carrito-vacio">
+                                <i class="bi bi-cart-x"></i>
+                            </div>
+                            <h3>Tu carrito está vacío</h3>
+                            <p>Agregá productos desde el catálogo para comenzar</p>
+                            <a href="productos.html" class="boton boton-primario">
+                                <i class="bi bi-arrow-right"></i> Ver Productos
+                            </a>
+                        </div>
+
+                        <!-- Los productos se cargan dinámicamente aquí -->
+                    </div>
+
+                    <!-- Continuar Comprando -->
+                    <div class="continuar-comprando">
+                        <a href="productos.html" class="enlace-continuar">
+                            <i class="bi bi-arrow-left"></i> Seguir comprando
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Resumen de Compra -->
+                <aside class="resumen-compra" aria-labelledby="titulo-resumen-compra">
+                    <div class="tarjeta-resumen">
+                        <h2 id="titulo-resumen-compra">Resumen de Compra</h2>
+
+                        <!-- Detalles de Precios -->
+                        <div class="detalles-precios">
+                            <div class="linea-precio">
+                                <span>Subtotal:</span>
+                                <span id="subtotal-carrito">$0.00</span>
+                            </div>
+
+                            <div class="linea-precio">
+                                <span>Envío:</span>
+                                <span id="costo-envio">$0.00</span>
+                            </div>
+
+                            <div class="linea-precio descuento">
+                                <span>Descuento:</span>
+                                <span id="descuento-carrito">-$0.00</span>
+                            </div>
+
+                            <div class="separador-precios"></div>
+
+                            <div class="linea-precio total">
+                                <strong>Total:</strong>
+                                <strong id="total-carrito">$0.00</strong>
+                            </div>
+                        </div>
+
+                        <!-- Cupón de Descuento -->
+                        <div class="seccion-cupon">
+                            <label for="input-cupon" class="etiqueta-cupon">¿Tenés un cupón de descuento?</label>
+                            <div class="grupo-cupon">
+                                <input type="text" id="input-cupon" placeholder="Ingresá el código" 
+                                    aria-label="Código de cupón de descuento">
+                                <button id="boton-aplicar-cupon" class="boton-aplicar-cupon" aria-label="Aplicar cupón">
+                                    Aplicar
+                                </button>
+                            </div>
+                            <div id="mensaje-cupon" class="mensaje-cupon" aria-live="polite"></div>
+                        </div>
+
+                        <!-- Opciones de Envío -->
+                        <div class="seccion-envio">
+                            <h3>Opciones de Envío</h3>
+                            <div class="opciones-envio">
+                                <label class="opcion-envio">
+                                    <input type="radio" name="opcion-envio" value="estandar" checked>
+                                    <span class="radio-personalizado"></span>
+                                    <div class="info-envio">
+                                        <span class="tipo-envio">Envío Estándar</span>
+                                        <span class="precio-envio">$500.00</span>
+                                        <span class="tiempo-envio">3-5 días hábiles</span>
+                                    </div>
+                                </label>
+
+                                <label class="opcion-envio">
+                                    <input type="radio" name="opcion-envio" value="express">
+                                    <span class="radio-personalizado"></span>
+                                    <div class="info-envio">
+                                        <span class="tipo-envio">Envío Express</span>
+                                        <span class="precio-envio">$800.00</span>
+                                        <span class="tiempo-envio">24-48 horas</span>
+                                    </div>
+                                </label>
+
+                                <label class="opcion-envio">
+                                    <input type="radio" name="opcion-envio" value="retiro">
+                                    <span class="radio-personalizado"></span>
+                                    <div class="info-envio">
+                                        <span class="tipo-envio">Retiro en Local</span>
+                                        <span class="precio-envio">$0.00</span>
+                                        <span class="tiempo-envio">Disponible inmediato</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Botón de Finalizar Compra -->
+                        <button id="boton-finalizar-compra" class="boton-finalizar-compra" disabled>
+                            <i class="bi bi-lock"></i> Finalizar Compra
+                        </button>
+
+                        <!-- Garantías y Seguridad -->
+                        <div class="garantias-seguridad">
+                            <div class="beneficio">
+                                <i class="bi bi-shield-check"></i>
+                                <span>Compra 100% segura</span>
+                            </div>
+                            <div class="beneficio">
+                                <i class="bi bi-arrow-left-right"></i>
+                                <span>30 días para devoluciones</span>
+                            </div>
+                            <div class="beneficio">
+                                <i class="bi bi-headset"></i>
+                                <span>Soporte técnico incluido</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Productos Sugeridos -->
+                    <div class="productos-sugeridos-carrito">
+                        <h3>Productos que podrían interesarte</h3>
+                        <div class="lista-sugeridos" id="lista-sugeridos-carrito">
+                            <!-- Los productos sugeridos se cargan dinámicamente -->
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Información Adicional -->
+            <div class="informacion-adicional-carrito">
+                <div class="tarjeta-informacion">
+                    <i class="bi bi-truck"></i>
+                    <div class="contenido-informacion">
+                        <h4>Envío Gratis</h4>
+                        <p>En compras superiores a $50.000</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-informacion">
+                    <i class="bi bi-credit-card"></i>
+                    <div class="contenido-informacion">
+                        <h4>12 Cuotas Sin Interés</h4>
+                        <p>Con todas las tarjetas</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-informacion">
+                    <i class="bi bi-arrow-left-right"></i>
+                    <div class="contenido-informacion">
+                        <h4>Devoluciones Gratis</h4>
+                        <p>30 días para cambiar de idea</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="pie-pagina" role="contentinfo">
+        <div class="contenedor">
+            <div class="grid-pie-pagina">
+                <div class="columna-pie">
+                    <h3>Nosotros</h3>
+                    <ul class="lista-pie">
+                        <li><a href="#">Quiénes Somos</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="columna-pie">
+                    <h3>Categorías</h3>
+                    <ul class="lista-pie">
+                        <li><a href="productos.html?categoria=cpu">Procesadores</a></li>
+                        <li><a href="productos.html?categoria=gpu">Tarjetas Gráficas</a></li>
+                        <li><a href="productos.html?categoria=ram">Memorias RAM</a></li>
+                    </ul>
+                </div>
+
+                <div class="columna-pie">
+                    <h3>Soporte</h3>
+                    <ul class="lista-pie">
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+
+                <div class="columna-pie">
+                    <h3>Medios de Pago</h3>
+                    <img src="../assets/images/medios-pago.webp" alt="Medios de pago aceptados" loading="lazy" class="imagen-medios-pago">
+                    <p class="texto-medios-pago">Aceptamos todas las tarjetas y transferencias</p>
+                </div>
+            </div>
+
+            <div class="separador-pie"></div>
+
+            <div class="pie-inferior">
+                <p class="copyright">&copy; 2024 ComponentesPC - Todos los derechos reservados</p>
+                <div class="redes-sociales">
+                    <a href="#" aria-label="Síguenos en Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Síguenos en Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Síguenos en Twitter"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts externos -->
+    <script src="../js/toggle.js" defer></script>
+    <script src="../js/carrito.js" defer></script>
+    <script src="../js/api.js" type="module" defer></script>
+    <script src="../js/scripts.js" defer></script>
+</body>
+</html>
