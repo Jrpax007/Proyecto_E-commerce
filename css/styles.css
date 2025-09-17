@@ -127,9 +127,12 @@ a {
     transition: var(--transicion-rapida);
 }
 
+
+/* =============================================ELIMINAR LINEA==========================================
 a:hover {
     color: var(--color-primario-hover);
-}
+}*/
+
 
 /* ===== LAYOUT GENERAL ===== */
 .contenedor {
@@ -138,6 +141,70 @@ a:hover {
     margin: 0 auto;
     padding: 0 var(--espaciado-md);
 }
+
+.contenedor-marquee {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee {
+    /*display: inline-block;*/
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+.marquee .contenido-marquee {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;          /* espacio entre img y texto */
+    padding-right: 48px; /* espacio entre repeticiones */
+}
+
+  .marquee img {
+    height: 48px;
+    width: auto;
+}
+
+.marquee strong {
+    font-size: 18px;
+    color: #000;
+}
+
+  @keyframes scroll {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/*.contenedor-marquee {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.prisoner{
+    position: absolute;
+    width: 3%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: deslizar 20s linear infinite;
+}
+
+.tank{
+    position: absolute;
+    width: 3%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: deslizar 25s linear infinite;
+}
+
+@keyframes deslizar{
+  0% {
+    left:100%;
+  }
+  100% {
+    left:-100%;
+  }
+}*/
 
 /* ===== ENCABEZADO PRINCIPAL ===== */
 .encabezado-principal {
@@ -313,8 +380,10 @@ a:hover {
     color: var(--color-texto);
 }
 
+/*===================================================AGREGAR ESTO=================================================*/
 .enlace-carrito:hover {
     background-color: var(--color-fondo);
+    color: var(--color-primario-hover);
 }
 
 .contador-carrito {
@@ -503,6 +572,11 @@ a:hover {
 .boton-exportar:hover {
     background-color: #e67e22;
     transform: translateY(-2px);
+}
+
+/*===================================================AGREGAR ESTO=================================================*/
+#boton-armar-pc:hover {
+    color: var(--color-primario-hover)
 }
 
 /* ===== TARJETAS ===== */
@@ -732,7 +806,7 @@ a:hover {
 
 /* Sección Armador */
 .seccion-armador {
-    background: linear-gradient(135deg, var(--color-fondo) 0%, #e0e7ff 100%);
+    background: linear-gradient(180deg, var(--color-fondo) 0%, #20728b 100%);
     border-radius: var(--radio-borde);
     padding: var(--espaciado-2xl);
     margin: var(--espaciado-2xl) 0;
