@@ -217,7 +217,7 @@ class CarritoCompra {
             retiro: 0
         };
 
-        return costos[this.estado.envio] || 500;
+        return costos[this.estado.envio] || 0;
     }
 
     aplicarCupon() {
