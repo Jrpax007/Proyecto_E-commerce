@@ -21,7 +21,7 @@
     --color-fondo: #f8fafc;
     --color-borde: #e2e8f0;
     --color-tarjeta: #ffffff;
-    --color-productos:rgb(228, 228, 228); /*Se agrego la variable para corregir el color de las tarjetas de categoria en el modo claro.*/
+    --color-productos:rgb(228, 228, 228); /*Se agrego la variable para corregir el color de las tarjetas de categoria en el modo claro.*/ /*-------------------------------------------------------------modificado*/
     --color-sombra: rgba(0, 0, 0, 0.1);
     
     /* Tipografía */
@@ -65,7 +65,7 @@
     --color-fondo: #0f172a;
     --color-borde: #334155;
     --color-tarjeta: #1e293b;
-    --color-productos: #1e293b; /*Se agrego por conflicto con la variable de modo claro*/
+    --color-productos: #1e293b; /*Se agrego por conflicto con la variable de modo claro*/ /*--------------------------------------------------------------------------------------------------------modificado*/
     --color-sombra: rgba(0, 0, 0, 0.3);
 }
 
@@ -169,8 +169,8 @@ a:hover {
 }
 
 .logo img {
-    width: 350px;
-    height: 80px;
+    width: 350px; /*modificado*/
+    height: 80px; /*modificado*/
     object-fit: contain;
     margin-left: 0px;
     margin-right: 0px;
@@ -511,7 +511,7 @@ a:hover {
 .tarjeta-categoria {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-productos); /*Aca se aplican las variables nuevas*/
+    background-color: var(--color-productos); /*Aca se aplican las variables nuevas*/ /*------------------------------------------------------------------------------------------------------------------modificado*/
     border-radius: var(--radio-borde);
     overflow: hidden;
     box-shadow: var(--sombra);
