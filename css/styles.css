@@ -169,11 +169,11 @@ a:hover {
 }
 
 .logo img {
-    width: 300px;
-    height: 60px;
+    width: 350px;
+    height: 80px;
     object-fit: contain;
     margin-left: 0px;
-    margin-right: -70px;
+    margin-right: 0px;
 }
 
 .texto-logo {
