@@ -971,7 +971,7 @@ textarea {
 .opcion-checkbox {
     display: flex;
     align-items: center;
-    gap: var(--espaciado-sm);
+    gap: 5px;
     cursor: pointer;
     padding: var(--espaciado-sm) 0;
 }
@@ -1898,7 +1898,6 @@ input[type="checkbox"] {
 
 .tarjeta-informacion i {
     font-size: 2rem;
-    color: var(--color-primario);
     flex-shrink: 0;
 }
 
