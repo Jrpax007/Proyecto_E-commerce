@@ -85,9 +85,11 @@ function renderizarPaginacion(totalProductos) {
 // Aplicar filtros
 // ===============================
 function aplicarFiltros() {
-  const categoria = filtroCategoria.value;
- 
+  const categoria = filtroCategoria.value;   
   productosFiltrados = productos.filter(p => {    
+    if (categoria === "oferta") {
+      return p.oferta === "true";
+    }
     return categoria === "" || p.categoria === categoria;
   });
 
@@ -120,9 +122,22 @@ document.addEventListener("DOMContentLoaded", async () => {
   localStorage.setItem("productos", JSON.stringify(productos));
   productosFiltrados = [...productos];
   renderizarProductos(productos);
-  // Listeners
-  
+ // Detectar categoría desde la URL
+  const params = new URLSearchParams(window.location.search);
+  const categoriaParam = params.get("categoria");
+ if (categoriaParam) {
+    if (categoriaParam === "oferta") {
+      // mostrar ofertas
+      productosFiltrados = productos.filter(p => p.oferta === "true");
+      renderizarProductos(productosFiltrados);
+    } else {
+      // seleccionar categoría normal
+      filtroCategoria.value = categoriaParam;
+      aplicarFiltros();
+    }
+  }
 
+  // Listeners
   botonFiltros.addEventListener("click", aplicarFiltros);
   ordenSelect.addEventListener("change", () => {
     aplicarOrden();

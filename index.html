@@ -43,8 +43,7 @@
             <nav class="navegacion-principal" id="navegacion-principal" aria-label="Navegación principal">
                 <ul class="lista-navegacion">
                     <li><a href="index.html" class="enlace-navegacion activo" aria-current="page">Inicio</a></li>
-                    <li><a href="pages/productos.html" class="enlace-navegacion">Productos</a></li>
-                    <li><a href="pages/armador.html" class="enlace-navegacion">Armar PC</a></li>
+                    <li><a href="pages/productos.html" class="enlace-navegacion">Productos</a></li>                    
                     <li><a href="pages/contacto.html" class="enlace-navegacion">Contacto</a></li>
                 </ul>
             </nav>
@@ -91,10 +90,7 @@
                 <div class="acciones-hero">
                     <a href="pages/productos.html" class="boton boton-primario boton-grande">
                         <i class="bi bi-arrow-right"></i> Explorar Productos
-                    </a>
-                    <a href="pages/armador.html" class="boton boton-secundario boton-grande">
-                        <i class="bi bi-cpu"></i> Armar Mi PC
-                    </a>
+                    </a>                    
                 </div>
             </div>
             <div class="indicador-desplazamiento">
@@ -112,9 +108,9 @@
 
                 <div class="grid-categorias">
                     <!-- Tarjetas de categorías -->
-                    <a href="pages/productos.html?categoria=cpu" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=Procesador" class="tarjeta-categoria">
                         <div class="imagen-categoria">
-                            <img src="assets/images/Procesadores/3-procesador_kydc8b.jpg" alt="Procesadores y CPUs"
+                            <img src="assets/images/Procesadores/3-procesador_kydc8b.jpg" alt="Procesador"
                                 loading="lazy">
                         </div>
                         <div class="contenido-categoria">
@@ -123,7 +119,7 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=gpu" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=Grafica" class="tarjeta-categoria">
                         <div class="imagen-categoria">
                             <img src="assets/images/Grafica/2.jpg" alt="Tarjetas Gráficas"
                                 loading="lazy">
@@ -134,7 +130,7 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=ram" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=Memorias" class="tarjeta-categoria">
                         <div class="imagen-categoria">
                             <img src="assets/images/Memorias/2.jpg" alt="Memorias RAM" loading="lazy">
                         </div>
@@ -144,7 +140,7 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=almacenamiento" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=Almacenamiento-rigido" class="tarjeta-categoria">
                         <div class="imagen-categoria">
                             <img src="assets/images/Almacenamiento/Rigido/1.jpg" alt="Discos y SSDs" loading="lazy">
                         </div>
@@ -154,7 +150,7 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=motherboard" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=Placa-madre" class="tarjeta-categoria">
                         <div class="imagen-categoria">
                             <img src="assets/images/Motherboard/1.jpg" alt="Placas Madre" loading="lazy">
                         </div>
@@ -164,7 +160,7 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=fuente" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=Fuente"  class="tarjeta-categoria">
                         <div class="imagen-categoria">
                             <img src="assets/images/Fuente/2.jpg" alt="Fuentes de Poder"
                                 loading="lazy">
@@ -175,18 +171,19 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=fuente" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=Mouse" class="tarjeta-categoria">
                         <div class="imagen-categoria">
                             <img src="assets/images/Mouse/5.jpg" alt="Mouse"
                                 loading="lazy">
                         </div>
                         <div class="contenido-categoria">
                             <h3>Mouse</h3>
+                            <p> Mouse Modernos</p>
                             
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=fuente" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=Gabinete" class="tarjeta-categoria">
                         <div class="imagen-categoria">
                             <img src="assets/images/Gabinete/3.jpg" alt="Gabinete"
                                 loading="lazy">
@@ -199,38 +196,19 @@
                 </div>
             </div>
         </section>
-
-        <!-- Sección Armador PC -->
-        <section class="seccion-armador" aria-labelledby="titulo-armador">
-            <div class="contenedor">
-                <div class="contenido-armador">
-                    <h2 id="titulo-armador" class="titulo-armador">¿No sabes por dónde empezar?</h2>
-                    <p class="descripcion-armador">Utiliza nuestro armador de PC para seleccionar componentes
-                        compatibles según tu presupuesto y necesidades.</p>
-                    <div class="caracteristicas-armador">
-                        <div class="caracteristica">
-                            <i class="bi bi-check-circle-fill"></i>
-                            <span>Compatibilidad garantizada</span>
-                        </div>
-                        <div class="caracteristica">
-                            <i class="bi bi-currency-dollar"></i>
-                            <span>Control de presupuesto</span>
-                        </div>
-                        <div class="caracteristica">
-                            <i class="bi bi-lightning-charge"></i>
-                            <span>Optimización de rendimiento</span>
-                        </div>
-                    </div>
-                    <a href="pages/armador.html" class="boton boton-primario boton-grande">
-                        <i class="bi bi-tools"></i> Comenzar a Armar
-                    </a>
-                </div>
-                <div class="imagen-armador">
-                    <img src="assets/images/armador-pc.webp" alt="Interfaz del Armador de PC" loading="lazy">
-                </div>
+        <!-- Sección Ofertas -->
+        <section class="seccion-ofertas" aria-labelledby="titulo-ofertas">
+            <div class="contenedor contenido-ofertas">
+                <h2 id="titulo-ofertas" class="titulo-seccion">🔥 Ofertas de la Semana</h2>
+                <p class="subtitulo-seccion">
+                Aprovechá descuentos exclusivos en procesadores, gráficas y más.
+                </p>
+                <a href="pages/productos.html?categoria=oferta" class="boton boton-primario">
+                <i class="bi bi-lightning-charge"></i> Ver Ofertas
+                </a>
             </div>
         </section>
-
+        
         <!-- Sección Productos Destacados -->
         <section class="seccion-productos-destacados" aria-labelledby="titulo-productos-destacados">
             <div class="contenedor">
