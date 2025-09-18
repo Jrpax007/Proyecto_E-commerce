@@ -26,13 +26,29 @@
                     <li><a href="contacto.html" class="enlace-navegacion">Contacto</a></li>
         </ul>
       </nav>
-      <div class="contenedor-carrito">
-        <a href="carrito.html">
-          <i class="bi bi-cart3"></i>
-          <span id="contador-carrito-global">0</span>
-        </a>
-      </div>
-    </div>
+      <!-- Controles del Encabezado -->
+            <div class="controles-encabezado">
+                <!-- Sistema de Búsqueda -->
+                <div class="contenedor-busqueda">
+                    <input type="text" id="busqueda-global" placeholder="Buscar productos..." aria-label="Campo de búsqueda">
+                    <button id="boton-buscar" class="boton-busqueda" aria-label="Realizar búsqueda">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <!-- Selector de Tema -->
+                <button class="selector-tema" id="selector-tema" aria-label="Cambiar entre modo claro y oscuro">
+                    <i class="bi bi-moon-fill icono-tema"></i>
+                </button>
+
+              <!-- Ícono del Carrito -->
+              <div class="contenedor-carrito">
+                <a href="carrito.html">
+                  <i class="bi bi-cart3"></i>
+                  <span id="contador-carrito-global">0</span>
+                </a>
+              </div>
+            </div>
   </header>
 
   <!-- Contenido -->
