@@ -154,7 +154,6 @@ class ToggleTema {
 
     actualizarIcono(modo) {
         const iconos = document.querySelectorAll(this.selectores.iconoTema);
-        
         iconos.forEach(icono => {
             /*Limpia clases existentes*/
             icono.classList.remove(this.clases.temaClaro, this.clases.temaOscuro);

@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="es" data-tema="claro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos - ComponentesPC</title>
-  <meta name="description" content="Catálogo completo de componentes de PC.">
+<!-- 
+    TRABAJO PRÁCTICO - PROGRAMACIÓN II
+    Página de Productos - Catálogo completo.
+    Funcionalidades: Filtros, búsqueda, paginación.
+    Estructura: Grid de productos con sistema de filtrado y ordenamiento.
+-->
 
-  <!-- Estilos -->
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="icon" type="image/webp" href="../assets/icons/icono-favicon.webp">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - ComponentesPC</title>
+    <meta name="description" content="Catálogo completo de componentes de PC. Procesadores, tarjetas gráficas, memorias y más.">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/webp" href="../assets/icons/icono-favicon.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Encabezado Principal -->
+    <!-- Encabezado Principal -->
     <header class="encabezado-principal" role="banner">
         <div class="contenedor encabezado-contenedor">
             <!-- Logo -->
             <div class="logo">
-                <a href="index.html" aria-label="Página principal - ComponentesPC">
-                    <img src="../assets/icons/Proyecto nuevo.webp" alt="Logo ComponentesPC" width="40" height="40">
+                <a href="../index.html" aria-label="Página principal - ComponentesPC">
+                    <img src="/assets/icons/Proyecto nuevo.webp" alt="Logo ComponentesPC" width="40" height="40">
                     <span class="texto-logo">ComponentesPC</span>
                 </a>
             </div>
 
             <!-- Menú Hamburguesa -->
-            <button class="menu-hamburguesa" id="boton-menu-movil" aria-label="Abrir menú principal"
-                aria-expanded="false">
+            <button class="menu-hamburguesa" id="boton-menu-movil" aria-label="Abrir menú principal" aria-expanded="false">
                 <span class="linea-hamburguesa"></span>
                 <span class="linea-hamburguesa"></span>
                 <span class="linea-hamburguesa"></span>
@@ -33,9 +40,10 @@
 
             <!-- Navegación Principal -->
             <nav class="navegacion-principal" id="navegacion-principal" aria-label="Navegación principal">
-               <ul class="lista-navegacion">
-                    <li><a href="../index.html" class="enlace-navegacion activo" aria-current="page">Inicio</a></li>
-                    <li><a href="productos.html" class="enlace-navegacion">Productos</a></li>                    
+                <ul class="lista-navegacion">
+                    <li><a href="../index.html" class="enlace-navegacion">Inicio</a></li>
+                    <li><a href="productos.html" class="enlace-navegacion activo" aria-current="page">Productos</a></li>
+                    <li><a href="armador.html" class="enlace-navegacion">Armar PC</a></li>
                     <li><a href="contacto.html" class="enlace-navegacion">Contacto</a></li>
                 </ul>
             </nav>
@@ -44,8 +52,7 @@
             <div class="controles-encabezado">
                 <!-- Sistema de Búsqueda -->
                 <div class="contenedor-busqueda">
-                    <input type="text" id="busqueda-global" placeholder="Buscar productos..."
-                        aria-label="Campo de búsqueda">
+                    <input type="text" id="busqueda-global" placeholder="Buscar productos..." aria-label="Campo de búsqueda">
                     <button id="boton-buscar" class="boton-busqueda" aria-label="Realizar búsqueda">
                         <i class="bi bi-search"></i>
                     </button>
@@ -67,99 +74,215 @@
         </div>
     </header>
 
-  <!-- Contenido principal -->
-  <main class="contenido-principal contenido-productos">
-    <div class="contenedor">
-      <div class="encabezado-pagina">
-        <h1>Catálogo de Productos</h1>
-        <p>Encuentra el componente perfecto para tu setup</p>
-      </div>
+    <!-- Contenido Principal -->
+    <main class="contenido-principal contenido-productos" role="main">
+        <div class="contenedor">
+            <!-- Encabezado de Página -->
+            <div class="encabezado-pagina">
+                <h1 class="titulo-pagina">Catálogo de Productos</h1>
+                <p class="descripcion-pagina">Encuentra el componente perfecto para tu setup</p>
+            </div>
 
-      <div class="layout-productos">
-        <!-- Panel de filtros -->
-        <aside class="panel-filtros">
-          <h2>Filtros</h2>
-          <div>
-            <h3>Categoría</h3>
-            <select id="filtro-categoria">
-              <option value="">Todas</option>
-              <option value="Auricular">Auricular</option>
-              <option value="Almacenamiento-solido">Almacenamiento-solido</option>
-              <option value="Almacenamiento-rigido">Almacenamiento-rigido</option>
-              <option value="Cooler-fan">Cooler-fan</option>
-              <option value="Fuente">Fuente</option>
-              <option value="Grafica">Grafica</option>
-              <option value="Memorias">Memorias</option>
-              <option value="Monitor">Monitor</option>
-              <option value="Mouse">Mouse</option>
-              <option value="Mouse-pad">Mouse-pad</option>
-              <option value="Procesador">Procesador</option>
-              <option value="Placa-madre">Placa-madre</option>
-              <option value="Teclado">Teclado</option>
-              <option value="Gabinete">Gabinete</option>
-            </select>
-          </div>
+            <div class="layout-productos">
+                <!-- Panel de Filtros -->
+                <aside class="panel-filtros" aria-labelledby="titulo-filtros">
+                    <div class="encabezado-filtros">
+                        <h2 id="titulo-filtros">Filtros</h2>
+                        <button class="boton-limpiar" id="boton-limpiar-filtros">
+                            <i class="bi bi-x-circle"></i> Limpiar
+                        </button>
+                    </div>
 
-          
+                    <!-- Filtro por Categoría -->
+                    <div class="grupo-filtro">
+                        <h3 class="titulo-filtro">Categoría</h3>
+                        <select class="selector-filtro" id="filtro-categoria" aria-label="Filtrar por categoría">
+                            <option value="">Todas las categorías</option>
+                            <option value="cpu">Procesadores</option>
+                            <option value="gpu">Tarjetas Gráficas</option>
+                            <option value="ram">Memorias RAM</option>
+                            <option value="almacenamiento">Almacenamiento</option>
+                            <option value="motherboard">Motherboards</option>
+                            <option value="fuente">Fuentes de Poder</option>
+                            <option value="gabinete">Gabinetes</option>
+                            <option value="refrigeracion">Refrigeración</option>
+                        </select>
+                    </div>
 
-          <button id="boton-aplicar-filtros" class="boton boton-primario">
-            <i class="bi bi-funnel"></i> Aplicar filtros
-          </button>
-        </aside>
+                    <!-- Filtro por Precio -->
+                    <div class="grupo-filtro">
+                        <h3 class="titulo-filtro">Rango de Precio</h3>
+                        <div class="rango-precio">
+                            <input type="range" id="filtro-precio" min="0" max="10000" value="10000" 
+                                aria-label="Rango de precio máximo">
+                            <div class="valores-precio">
+                                <span id="precio-min">$0</span>
+                                <span id="precio-max">$10000</span>
+                            </div>
+                        </div>
+                    </div>
 
-       <!-- Productos -->
-<section class="seccion-productos">
-  <div class="controles-visualizacion">
-    <div class="info-resultados">
-      <h2>Productos</h2>
-      <span id="contador-resultados">Mostrando 0 productos</span>
-    </div>
-    <div class="controles-ordenamiento">
-      <label for="orden-productos">Ordenar por:</label>
-      <select id="orden-productos">
-        <option value="nombre">Nombre A-Z</option>
-        <option value="precio-asc">Precio: Menor a Mayor</option>
-        <option value="precio-desc">Precio: Mayor a Menor</option>
-        <option value="popularidad">Popularidad</option>
-      </select>
-    </div>
-  </div>
+                    <!-- Filtro por Marca -->
+                    <div class="grupo-filtro">
+                        <h3 class="titulo-filtro">Marca</h3>
+                        <div class="lista-checkbox">
+                            <label class="opcion-checkbox">
+                                <input type="checkbox" name="marca" value="intel"> Intel
+                            </label>
+                            <label class="opcion-checkbox">
+                                <input type="checkbox" name="marca" value="amd"> AMD
+                            </label>
+                            <label class="opcion-checkbox">
+                                <input type="checkbox" name="marca" value="nvidia"> NVIDIA
+                            </label>
+                            <label class="opcion-checkbox">
+                                <input type="checkbox" name="marca" value="corsair"> Corsair
+                            </label>
+                            <label class="opcion-checkbox">
+                                <input type="checkbox" name="marca" value="samsung"> Samsung
+                            </label>
+                        </div>
+                    </div>
 
-  <!-- Grid dinámico -->
-  <div id="grid-productos" class="grid-productos"></div>
+                    <!-- Botón Aplicar Filtros -->
+                    <button class="boton boton-primario boton-ancho" id="boton-aplicar-filtros">
+                        <i class="bi bi-funnel"></i> Aplicar Filtros
+                    </button>
+                </aside>
 
-  <!-- Paginación -->
-  <nav class="paginacion" aria-label="Paginación de productos">
-    <button class="boton-paginacion" id="boton-pagina-anterior" disabled>
-      <i class="bi bi-chevron-left"></i> Anterior
-    </button>
+                <!-- Sección Principal de Productos -->
+                <section class="seccion-productos" aria-labelledby="titulo-resultados">
+                    <!-- Controles de Visualización -->
+                    <div class="controles-visualizacion">
+                        <div class="info-resultados">
+                            <h2 id="titulo-resultados">Productos</h2>
+                            <span class="contador-resultados" id="contador-resultados">Mostrando 0 productos</span>
+                        </div>
+                        
+                        <div class="controles-ordenamiento">
+                            <label for="orden-productos">Ordenar por:</label>
+                            <select class="selector-orden" id="orden-productos" aria-label="Ordenar productos">
+                                <option value="nombre">Nombre A-Z</option>
+                                <option value="precio-asc">Precio: Menor a Mayor</option>
+                                <option value="precio-desc">Precio: Mayor a Menor</option>
+                                <option value="popularidad">Popularidad</option>
+                            </select>
+                        </div>
+                    </div>
 
-    <div class="numeros-pagina" id="numeros-pagina">
-      <!-- Se generan dinámicamente -->
-    </div>
+                    <!-- Grid de Productos -->
+                    <div class="grid-productos" id="grid-productos">
+                        <!-- Los productos se cargan dinámicamente mediante JavaScript -->
+                        <div class="tarjeta-producto esqueleto">
+                            <div class="imagen-esqueleto"></div>
+                            <div class="contenido-esqueleto"></div>
+                        </div>
+                        <div class="tarjeta-producto esqueleto">
+                            <div class="imagen-esqueleto"></div>
+                            <div class="contenido-esqueleto"></div>
+                        </div>
+                        <div class="tarjeta-producto esqueleto">
+                            <div class="imagen-esqueleto"></div>
+                            <div class="contenido-esqueleto"></div>
+                        </div>
+                        <div class="tarjeta-producto esqueleto">
+                            <div class="imagen-esqueleto"></div>
+                            <div class="contenido-esqueleto"></div>
+                        </div>
+                        <div class="tarjeta-producto esqueleto">
+                            <div class="imagen-esqueleto"></div>
+                            <div class="contenido-esqueleto"></div>
+                        </div>
+                        <div class="tarjeta-producto esqueleto">
+                            <div class="imagen-esqueleto"></div>
+                            <div class="contenido-esqueleto"></div>
+                        </div>
+                        <div class="tarjeta-producto esqueleto">
+                            <div class="imagen-esqueleto"></div>
+                            <div class="contenido-esqueleto"></div>
+                        </div>
+                        <div class="tarjeta-producto esqueleto">
+                            <div class="imagen-esqueleto"></div>
+                            <div class="contenido-esqueleto"></div>
+                        </div>
+                    </div>
 
-    <button class="boton-paginacion" id="boton-pagina-siguiente">
-      Siguiente <i class="bi bi-chevron-right"></i>
-    </button>
-  </nav>
-</section>
+                    <!-- Paginación -->
+                    <nav class="paginacion" aria-label="Paginación de productos">
+                        <button class="boton-paginacion" id="boton-pagina-anterior" disabled>
+                            <i class="bi bi-chevron-left"></i> Anterior
+                        </button>
+                        
+                        <div class="numeros-pagina" id="numeros-pagina">
+                            <span class="pagina-activa">1</span>
+                        </div>
+                        
+                        <button class="boton-paginacion" id="boton-pagina-siguiente">
+                            Siguiente <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </nav>
+                </section>
+            </div>
+        </div>
+    </main>
 
-      </div>
-    </div>
-  </main>
+    <!-- Pie de Página -->
+    <footer class="pie-pagina" role="contentinfo">
+        <div class="contenedor">
+            <div class="grid-pie-pagina">
+                <div class="columna-pie">
+                    <h3>Nosotros</h3>
+                    <ul class="lista-pie">
+                        <li><a href="#">Quiénes Somos</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
 
-  <!-- Footer -->
-  <footer class="pie-pagina">
-    <div class="contenedor">
-      <p>&copy; 2024 ComponentesPC - Todos los derechos reservados</p>
-    </div>
-  </footer>
+                <div class="columna-pie">
+                    <h3>Categorías</h3>
+                    <ul class="lista-pie">
+                        <li><a href="productos.html?categoria=cpu">Procesadores</a></li>
+                        <li><a href="productos.html?categoria=gpu">Tarjetas Gráficas</a></li>
+                        <li><a href="productos.html?categoria=ram">Memorias RAM</a></li>
+                    </ul>
+                </div>
 
-  <!-- Scripts -->
-  <script src="../js/api.js" type="module" defer></script>
-<script src="../js/carrito.js" defer></script>
-<script src="../js/productos.js" type="module" defer></script>
-<script src="../js/toggle.js" defer></script>
-<script src="../js/scripts.js"></script>
+                <div class="columna-pie">
+                    <h3>Soporte</h3>
+                    <ul class="lista-pie">
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+
+                <div class="columna-pie">
+                    <h3>Medios de Pago</h3>
+                    <img src="../assets/images/medios-pago.webp" alt="Medios de pago aceptados" loading="lazy" class="imagen-medios-pago">
+                    <p class="texto-medios-pago">Aceptamos todas las tarjetas y transferencias</p>
+                </div>
+            </div>
+
+            <div class="separador-pie"></div>
+
+            <div class="pie-inferior">
+                <p class="copyright">&copy; 2024 ComponentesPC - Todos los derechos reservados</p>
+                <div class="redes-sociales">
+                    <a href="#" aria-label="Síguenos en Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Síguenos en Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Síguenos en Twitter"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts externos -->
+    <script src="../js/toggle.js" defer></script>
+    <script src="../js/carrito.js" defer></script>
+    <script src="../js/api.js" type="module" defer></script>
+    <script src="../js/productos.js" defer></script>
+    <script src="../js/buscador.js" defer></script>
+    <script src="../js/scripts.js" defer></script>
 </body>
 </html>

@@ -389,12 +389,12 @@ class ValidadorFormulario {
         };
     }
 
-    async enviarFormulario(datos) {
+    /*async enviarFormulario(datos) {
         if (typeof window.api !== 'undefined' && window.api.enviarFormularioContacto) {
             return await window.api.enviarFormularioContacto(datos);
         }
 
-        //Simulación de envío para desarrollo
+        --Simulación de envío para desarrollo
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve({
@@ -405,7 +405,7 @@ class ValidadorFormulario {
                 });
             }, 2000);
         });
-    }
+    }*/
 
     mostrarError(campo, mensaje) {
         const elementoError = document.querySelector(`#error-${campo}`);

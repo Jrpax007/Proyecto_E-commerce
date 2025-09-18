@@ -15,7 +15,7 @@
 
     <!-- Hojas de estilo -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/webp" href="./assets/icons/icono-favicon.webp">
+    <link rel="icon" type="image/webp" href="assets/icons/icono-favicon.webp">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
@@ -26,7 +26,7 @@
             <!-- Logo -->
             <div class="logo">
                 <a href="index.html" aria-label="Página principal - ComponentesPC">
-                    <img src="./assets/icons/Proyecto nuevo.webp" alt="Logo ComponentesPC" width="40" height="40">
+                    <img src="/assets/icons/Proyecto nuevo.webp" alt="Logo ComponentesPC" width="40" height="40">
                     <span class="texto-logo">ComponentesPC</span>
                 </a>
             </div>
@@ -43,7 +43,8 @@
             <nav class="navegacion-principal" id="navegacion-principal" aria-label="Navegación principal">
                 <ul class="lista-navegacion">
                     <li><a href="index.html" class="enlace-navegacion activo" aria-current="page">Inicio</a></li>
-                    <li><a href="pages/productos.html" class="enlace-navegacion">Productos</a></li>                    
+                    <li><a href="pages/productos.html" class="enlace-navegacion">Productos</a></li>
+                    <li><a href="pages/armador.html" class="enlace-navegacion">Armar PC</a></li>
                     <li><a href="pages/contacto.html" class="enlace-navegacion">Contacto</a></li>
                 </ul>
             </nav>
@@ -90,7 +91,10 @@
                 <div class="acciones-hero">
                     <a href="pages/productos.html" class="boton boton-primario boton-grande">
                         <i class="bi bi-arrow-right"></i> Explorar Productos
-                    </a>                    
+                    </a>
+                    <a href="pages/armador.html" class="boton boton-secundario boton-grande">
+                        <i class="bi bi-cpu"></i> Armar Mi PC
+                    </a>
                 </div>
             </div>
             <div class="indicador-desplazamiento">
@@ -108,9 +112,9 @@
 
                 <div class="grid-categorias">
                     <!-- Tarjetas de categorías -->
-                    <a href="pages/productos.html?categoria=Procesador" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=cpu" class="tarjeta-categoria">
                         <div class="imagen-categoria">
-                            <img src="assets/images/Procesadores/3-procesador_kydc8b.jpg" alt="Procesador"
+                            <img src="assets/images/categorias/procesadores.webp" alt="Procesadores y CPUs"
                                 loading="lazy">
                         </div>
                         <div class="contenido-categoria">
@@ -119,9 +123,9 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=Grafica" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=gpu" class="tarjeta-categoria">
                         <div class="imagen-categoria">
-                            <img src="assets/images/Grafica/2.jpg" alt="Tarjetas Gráficas"
+                            <img src="assets/images/categorias/tarjetas-graficas.webp" alt="Tarjetas Gráficas"
                                 loading="lazy">
                         </div>
                         <div class="contenido-categoria">
@@ -130,9 +134,9 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=Memorias" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=ram" class="tarjeta-categoria">
                         <div class="imagen-categoria">
-                            <img src="assets/images/Memorias/2.jpg" alt="Memorias RAM" loading="lazy">
+                            <img src="assets/images/categorias/memorias-ram.webp" alt="Memorias RAM" loading="lazy">
                         </div>
                         <div class="contenido-categoria">
                             <h3>Memorias RAM</h3>
@@ -140,9 +144,9 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=Almacenamiento-rigido" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=almacenamiento" class="tarjeta-categoria">
                         <div class="imagen-categoria">
-                            <img src="assets/images/Almacenamiento/Rigido/1.jpg" alt="Discos y SSDs" loading="lazy">
+                            <img src="assets/images/categorias/almacenamiento.webp" alt="Discos y SSDs" loading="lazy">
                         </div>
                         <div class="contenido-categoria">
                             <h3>Almacenamiento</h3>
@@ -150,9 +154,9 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=Placa-madre" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=motherboard" class="tarjeta-categoria">
                         <div class="imagen-categoria">
-                            <img src="assets/images/Motherboard/1.jpg" alt="Placas Madre" loading="lazy">
+                            <img src="assets/images/categorias/motherboards.webp" alt="Placas Madre" loading="lazy">
                         </div>
                         <div class="contenido-categoria">
                             <h3>Motherboards</h3>
@@ -160,9 +164,9 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=Fuente"  class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=fuente" class="tarjeta-categoria">
                         <div class="imagen-categoria">
-                            <img src="assets/images/Fuente/2.jpg" alt="Fuentes de Poder"
+                            <img src="assets/images/categorias/fuentes-poder.webp" alt="Fuentes de Poder"
                                 loading="lazy">
                         </div>
                         <div class="contenido-categoria">
@@ -171,44 +175,62 @@
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=Mouse" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=fuente" class="tarjeta-categoria">
                         <div class="imagen-categoria">
-                            <img src="assets/images/Mouse/5.jpg" alt="Mouse"
+                            <img src="assets/images/categorias/fuentes-poder.webp" alt="Fuentes de Poder"
                                 loading="lazy">
                         </div>
                         <div class="contenido-categoria">
-                            <h3>Mouse</h3>
-                            <p> Mouse Modernos</p>
-                            
+                            <h3>Fuentes</h3>
+                            <p>Alimentación confiable</p>
                         </div>
                     </a>
 
-                    <a href="pages/productos.html?categoria=Gabinete" class="tarjeta-categoria">
+                    <a href="pages/productos.html?categoria=fuente" class="tarjeta-categoria">
                         <div class="imagen-categoria">
-                            <img src="assets/images/Gabinete/3.jpg" alt="Gabinete"
+                            <img src="assets/images/categorias/fuentes-poder.webp" alt="Fuentes de Poder"
                                 loading="lazy">
                         </div>
                         <div class="contenido-categoria">
-                            <h3>Gabinetes</h3>
-                            <p>Mejores Diseños</p>
+                            <h3>Fuentes</h3>
+                            <p>Alimentación confiable</p>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
-        <!-- Sección Ofertas -->
-        <section class="seccion-ofertas" aria-labelledby="titulo-ofertas">
-            <div class="contenedor contenido-ofertas">
-                <h2 id="titulo-ofertas" class="titulo-seccion">🔥 Ofertas de la Semana</h2>
-                <p class="subtitulo-seccion">
-                Aprovechá descuentos exclusivos en procesadores, gráficas y más.
-                </p>
-                <a href="pages/productos.html?categoria=oferta" class="boton boton-primario">
-                <i class="bi bi-lightning-charge"></i> Ver Ofertas
-                </a>
+
+        <!-- Sección Armador PC -->
+        <section class="seccion-armador" aria-labelledby="titulo-armador">
+            <div class="contenedor">
+                <div class="contenido-armador">
+                    <h2 id="titulo-armador" class="titulo-armador">¿No sabes por dónde empezar?</h2>
+                    <p class="descripcion-armador">Utiliza nuestro armador de PC para seleccionar componentes
+                        compatibles según tu presupuesto y necesidades.</p>
+                    <div class="caracteristicas-armador">
+                        <div class="caracteristica">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Compatibilidad garantizada</span>
+                        </div>
+                        <div class="caracteristica">
+                            <i class="bi bi-currency-dollar"></i>
+                            <span>Control de presupuesto</span>
+                        </div>
+                        <div class="caracteristica">
+                            <i class="bi bi-lightning-charge"></i>
+                            <span>Optimización de rendimiento</span>
+                        </div>
+                    </div>
+                    <a href="pages/armador.html" class="boton boton-primario boton-grande">
+                        <i class="bi bi-tools"></i> Comenzar a Armar
+                    </a>
+                </div>
+                <div class="imagen-armador">
+                    <img src="assets/images/armador-pc.webp" alt="Interfaz del Armador de PC" loading="lazy">
+                </div>
             </div>
         </section>
-        
+
         <!-- Sección Productos Destacados -->
         <section class="seccion-productos-destacados" aria-labelledby="titulo-productos-destacados">
             <div class="contenedor">
@@ -221,10 +243,6 @@
                     <!-- Los productos se cargan dinámicamente -->
                     <div class="tarjeta-producto esqueleto">
                         <div class="imagen-esqueleto"></div>
-                        
-                            <img src="assets/images/Gabinete/3.jpg" alt="Gabinete"
-                                loading="lazy">
-                        
                         <div class="contenido-esqueleto"></div>
                     </div>
                     <div class="tarjeta-producto esqueleto">
@@ -274,7 +292,7 @@
         </section>
     </main>
 
-    <!-- Pie de Página -->
+<!-- Pie de Página -->
     <footer class="pie-pagina" role="contentinfo">
         <div class="contenedor">
             <div class="grid-pie-pagina">
@@ -290,16 +308,16 @@
                 <div class="columna-pie">
                     <h3>Categorías</h3>
                     <ul class="lista-pie">
-                        <li><a href="pages/productos.html?categoria=cpu">Procesadores</a></li>
-                        <li><a href="pages/productos.html?categoria=gpu">Tarjetas Gráficas</a></li>
-                        <li><a href="pages/productos.html?categoria=ram">Memorias RAM</a></li>
+                        <li><a href="productos.html?categoria=cpu">Procesadores</a></li>
+                        <li><a href="productos.html?categoria=gpu">Tarjetas Gráficas</a></li>
+                        <li><a href="productos.html?categoria=ram">Memorias RAM</a></li>
                     </ul>
                 </div>
 
                 <div class="columna-pie">
                     <h3>Soporte</h3>
                     <ul class="lista-pie">
-                        <li><a href="pages/contacto.html">Contacto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Soporte Técnico</a></li>
                     </ul>
@@ -307,8 +325,7 @@
 
                 <div class="columna-pie">
                     <h3>Medios de Pago</h3>
-                    <img src="assets/images/medios-pago.webp" alt="Medios de pago aceptados" loading="lazy"
-                        class="imagen-medios-pago">
+                    <img src="../assets/images/medios-pago.webp" alt="Medios de pago aceptados" loading="lazy" class="imagen-medios-pago">
                     <p class="texto-medios-pago">Aceptamos todas las tarjetas y transferencias</p>
                 </div>
             </div>
@@ -327,13 +344,12 @@
     </footer>
 
     <!-- Scripts externos -->
-    <!--<script src="js/carga.js" defer></script>-->
-   <script src="js/api.js" type="module" defer></script>
-<script src="js/carrito.js" defer></script>
-
-<script src="js/toggle.js" defer></script>
-<script src="js/scripts.js" defer></script>
-<script src="js/destacados.js" type="module" defer></script>
+    <script src="js/carga.js" defer></script>
+    <script src="js/toggle.js" defer></script>
+    <script src="js/carrito.js" defer></script>
+    <script src="js/api.js" type="module" defer></script>
+    <script src="js/productos.js" defer></script>
+    <script src="js/scripts.js" defer></script>
 </body>
 
 </html>

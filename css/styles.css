@@ -849,7 +849,8 @@ a:hover {
 .grupo-formulario {
     display: flex;
     flex-direction: column;
-    gap: var(--espaciado-xs);
+    gap: var(--espaciado-md);
+    flex-wrap: wrap;
 }
 
 .etiqueta-formulario {
@@ -1415,7 +1416,6 @@ input[type="checkbox"] {
     margin-bottom: var(--espaciado-sm);
 }
 
-
 .mensaje-carrito-vacio p {
     margin-bottom: var(--espaciado-xl);
 }
@@ -1670,10 +1670,6 @@ input[type="checkbox"] {
 }
 
 /* Opciones de envío */
-.linea-precio.envio span:last-child {
-  color: var(--color-texto);
-  font-weight: var(--peso-medium);
-}
 .seccion-envio {
     margin-bottom: var(--espaciado-xl);
 }
@@ -1730,21 +1726,6 @@ input[type="checkbox"] {
     font-size: 0.8rem;
     color: var(--color-texto-secundario);
     margin-top: var(--espaciado-xs);
-}
-
-.metodo-envio {
-  margin: 1rem 0;
-}
-
-.metodo-envio label {
-  font-weight: bold;
-  margin-right: 0.5rem;
-}
-
-.metodo-envio select {
-  padding: 0.3rem 0.6rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
 }
 
 /* Botón de finalizar compra */
@@ -2684,98 +2665,6 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 
 input:valid:not(:focus):not(:placeholder-shown) {
     border-color: var(--color-exito);
-}
-
-/* Contenedor de paginación */
-.paginacion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0;
-  gap: 1rem;
-}
-
-/* Botones prev/next */
-.boton-paginacion {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background 0.2s ease-in-out;
-}
-
-.boton-paginacion:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-.boton-paginacion:hover:not(:disabled) {
-  background-color: #0056b3;
-}
-
-/* Números de página */
-.numeros-pagina {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.numero-pagina {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.2s ease-in-out;
-}
-
-.numero-pagina:hover {
-  background-color: #f0f0f0;
-}
-
-/* Página activa */
-.pagina-activa {
-  background-color: #007bff;
-  color: white;
-  border-color: #007bff;
-  font-weight: bold;
-}
-/* ==== nuevo ==== */
-/* ===== Sección Ofertas ===== */
-.seccion-ofertas {
-  background: linear-gradient(135deg, #1a1a1a, #333); /* fondo degradado oscuro */
-  color: #fff;
-  padding: 3rem 1rem;
-  text-align: center;
-  border-radius: 12px;
-  margin: 3rem auto;
-  max-width: 1200px;
-}
-
-.contenido-ofertas .titulo-seccion {
-  color: #fff;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.contenido-ofertas .subtitulo-seccion {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-  color: #ddd;
-}
-
-.seccion-ofertas .boton {
-  font-size: 1.1rem;
-  padding: 0.8rem 2rem;
-  border-radius: 8px;
-  transition: transform 0.2s ease, background 0.3s ease;
-}
-
-.seccion-ofertas .boton:hover {
-  transform: scale(1.05);
-  background: #d3edf3;
 }
 
 /* Fin del archivo CSS */
