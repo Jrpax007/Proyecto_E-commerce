@@ -56,19 +56,24 @@ function renderizarCarrito() {
     subtotal += prod.precio * prod.cantidad;
 
     listaCarrito.innerHTML += `
-      <div class="producto-carrito">
-        <img src="${prod.img}" alt="${prod.nombre}" width="80">
-        <div class="info-producto">
-          <h4>${prod.nombre}</h4>
-          <p>Precio unitario: $${prod.precio}</p>
-          <div class="cantidad">
-            <button onclick="cambiarCantidad(${index}, -1)">-</button>
-            <span>${prod.cantidad}</span>
-            <button onclick="cambiarCantidad(${index}, 1)">+</button>
+        <div class="item-carrito">
+        <div class="imagen-item-carrito">
+          <img src="${prod.img}" alt="${prod.nombre}">
+        </div>
+        <div class="info-item-carrito">
+          <h4 class="nombre-producto">${prod.nombre}</h4>
+          <p class="precio-unitario">Precio: $${prod.precio}</p>
+          <div class="controles-cantidad">
+            <button class="boton-cantidad" onclick="cambiarCantidad(${index}, -1)">-</button>
+            <span class="cantidad-actual">${prod.cantidad}</span>
+            <button class="boton-cantidad" onclick="cambiarCantidad(${index}, 1)">+</button>
           </div>
         </div>
-        <button onclick="eliminarDelCarrito(${index})">❌</button>
-      </div>
+        <div class="precio-item-carrito">
+          <span class="subtotal-producto">$${(prod.precio * prod.cantidad).toFixed(2)}</span>
+          <button class="boton-eliminar" onclick="eliminarDelCarrito(${index})">❌</button>
+        </div>
+      </div>     
     `;
   });
 
@@ -92,6 +97,7 @@ function calcularTotales(subtotal) {
 
   subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
   descuentoEl.textContent = `-$${descuento.toFixed(2)}`;
+  document.getElementById("envio-carrito").textContent = `$${envio.toFixed(2)}`;
   totalEl.textContent = `$${total.toFixed(2)}`;
 }
 

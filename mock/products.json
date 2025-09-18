@@ -108,7 +108,7 @@
     {"id":53, "nombre": "Mouse-pad", "categoria": "Mouse-pad","precio": 14000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757258286/compragamer_Imganen_general_16271_Mouse_Pad_ASUS_ROG_Balteus_QI_NH01_Carga_Inalambrica_RGB_AuraSync_370x320mm_f5c87df6_ggoha3.jpg"]},
     {"id":54, "nombre": "Mouse-pad", "categoria": "Mouse-pad","precio": 15000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757257085/compragamer_Imganen_general_12062_Mouse_Pad_Logitech_G_Powerplay_Carga_Inalambrica_321x344mm_1d5daeb5_ywy9st.jpg"]},
     
-    {"id":55, "nombre": "Procesador", "categoria": "Procesador","precio": 16000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936030/8-procesador_ekjttk.jpg"]},
+    {"id":55, "nProcesadorombre": "Procesador", "categoria": "Procesador","precio": 16000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936030/8-procesador_ekjttk.jpg"]},
     {"id":56, "nombre": "Procesador", "categoria": "Procesador","precio": 1200, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936024/7-procesador_hwbnts.jpg"]},
     {"id":57, "nombre": "Procesador", "categoria": "Procesador","precio": 1400, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936022/6-procesador_vkhrip.jpg"]},
     {"id":58, "nombre": "Procesador", "categoria": "Procesador","precio": 1100, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757936014/5-procesador_zt2m4a.jpg"]},
@@ -117,12 +117,12 @@
     {"id":61, "nombre": "Procesador", "categoria": "Procesador","precio": 12000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935997/2-procesador_b4vksn.jpg"]},
     {"id":62, "nombre": "Procesador", "categoria": "Procesador","precio": 13000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757935994/1-procesador_aowhrt.jpg"]},
 
-    {"id":63, "nombre": "Procesador", "categoria": "Placa-madre","precio": 16000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/4-placa-madre_fhptm5.jpg"]},
-    {"id":64, "nombre": "Procesador", "categoria": "Placa-madre","precio": 1200, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/3-placa-madre_nxpsuf.jpg"]},
-    {"id":65, "nombre": "Procesador", "categoria": "Placa-madre","precio": 1400, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},
-    {"id":66, "nombre": "Procesador", "categoria": "Placa-madre","precio": 1100, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},
-    {"id":67, "nombre": "Procesador", "categoria": "Placa-madre","precio": 9000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},
-    {"id":68, "nombre": "Procesador", "categoria": "Placa-madre","precio":18000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},    
+    {"id":63, "nombre": "Placa-Madre", "categoria": "Placa-madre","precio": 16000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/4-placa-madre_fhptm5.jpg"]},
+    {"id":64, "nombre": "Placa-Madre", "categoria": "Placa-madre","precio": 1200, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/3-placa-madre_nxpsuf.jpg"]},
+    {"id":65, "nombre": "Placa-Madre", "categoria": "Placa-madre","precio": 1400, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},
+    {"id":66, "nombre": "Placa-Madre", "categoria": "Placa-madre","precio": 1100, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},
+    {"id":67, "nombre": "Placa-Madre", "categoria": "Placa-madre","precio": 9000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},
+    {"id":68, "nombre": "Placa-Madre", "categoria": "Placa-madre","precio":18000, "img": ["https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757950811/5-placa-madre_digqz0.jpg"]},    
     
     {"id":69, "nombre": "Teclado", "categoria": "Teclado","precio": 12000, "img": [""]},
     {"id":70, "nombre": "Teclado", "categoria": "Teclado","precio": 13000, "img": [""]},

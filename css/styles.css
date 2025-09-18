@@ -1670,6 +1670,10 @@ input[type="checkbox"] {
 }
 
 /* Opciones de envío */
+.linea-precio.envio span:last-child {
+  color: var(--color-texto);
+  font-weight: var(--peso-medium);
+}
 .seccion-envio {
     margin-bottom: var(--espaciado-xl);
 }
@@ -1726,6 +1730,21 @@ input[type="checkbox"] {
     font-size: 0.8rem;
     color: var(--color-texto-secundario);
     margin-top: var(--espaciado-xs);
+}
+
+.metodo-envio {
+  margin: 1rem 0;
+}
+
+.metodo-envio label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.metodo-envio select {
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 /* Botón de finalizar compra */

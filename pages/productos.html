@@ -18,7 +18,7 @@
             <!-- Logo -->
             <div class="logo">
                 <a href="index.html" aria-label="Página principal - ComponentesPC">
-                    <img src="/assets/icons/Proyecto nuevo.webp" alt="Logo ComponentesPC" width="40" height="40">
+                    <img src="../assets/icons/Proyecto nuevo.webp" alt="Logo ComponentesPC" width="40" height="40">
                     <span class="texto-logo">ComponentesPC</span>
                 </a>
             </div>
@@ -34,7 +34,7 @@
             <!-- Navegación Principal -->
             <nav class="navegacion-principal" id="navegacion-principal" aria-label="Navegación principal">
                <ul class="lista-navegacion">
-                    <li><a href="./index.html" class="enlace-navegacion activo" aria-current="page">Inicio</a></li>
+                    <li><a href="../index.html" class="enlace-navegacion activo" aria-current="page">Inicio</a></li>
                     <li><a href="productos.html" class="enlace-navegacion">Productos</a></li>
                     <li><a href="armador.html" class="enlace-navegacion">Armar PC</a></li>
                     <li><a href="contacto.html" class="enlace-navegacion">Contacto</a></li>
@@ -84,34 +84,23 @@
             <h3>Categoría</h3>
             <select id="filtro-categoria">
               <option value="">Todas</option>
-              <option value="cpu">Procesadores</option>
-              <option value="gpu">Tarjetas Gráficas</option>
-              <option value="ram">Memorias RAM</option>
-              <option value="almacenamiento">Almacenamiento</option>
-              <option value="motherboard">Motherboards</option>
-              <option value="fuente">Fuentes</option>
-              <option value="gabinete">Gabinetes</option>
-              <option value="refrigeracion">Refrigeración</option>
+              <option value="Auricular">Auricular</option>
+              <option value="Almacenamiento-solido">Almacenamiento-solido</option>
+              <option value="Almacenamiento-rigido">Almacenamiento-rigido</option>
+              <option value="Cooler-fan">Cooler-fan</option>
+              <option value="Fuente">Fuente</option>
+              <option value="Grafica">Grafica</option>
+              <option value="Memorias">Memorias</option>
+              <option value="Monitor">Monitor</option>
+              <option value="Mouse">Mouse</option>
+              <option value="Mouse-pad">Mouse-pad</option>
+              <option value="Procesador">Procesador</option>
+              <option value="Placa-madre">Placa-madre</option>
+              <option value="Teclado">Teclado</option>
             </select>
           </div>
 
-          <div>
-            <h3>Rango de precio</h3>
-            <input type="range" id="filtro-precio" min="0" max="10000" value="10000">
-            <div class="valores-precio">
-              <span>$0</span>
-              <span id="precio-max">$10000</span>
-            </div>
-          </div>
-
-          <div>
-            <h3>Marca</h3>
-            <label><input type="checkbox" name="marca" value="intel"> Intel</label>
-            <label><input type="checkbox" name="marca" value="amd"> AMD</label>
-            <label><input type="checkbox" name="marca" value="nvidia"> NVIDIA</label>
-            <label><input type="checkbox" name="marca" value="corsair"> Corsair</label>
-            <label><input type="checkbox" name="marca" value="samsung"> Samsung</label>
-          </div>
+          
 
           <button id="boton-aplicar-filtros" class="boton boton-primario">
             <i class="bi bi-funnel"></i> Aplicar filtros

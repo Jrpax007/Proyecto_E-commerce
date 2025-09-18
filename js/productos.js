@@ -1,11 +1,10 @@
 import { obtenerProductos } from "./api.js";
 
+
 // Referencias al DOM
 const grid = document.getElementById("grid-productos");
 const filtroCategoria = document.getElementById("filtro-categoria");
-const filtroPrecio = document.getElementById("filtro-precio");
-const precioMaxEl = document.getElementById("precio-max");
-const filtroMarcas = document.querySelectorAll('input[name="marca"]');
+
 const botonFiltros = document.getElementById("boton-aplicar-filtros");
 const ordenSelect = document.getElementById("orden-productos");
 const contadorResultados = document.getElementById("contador-resultados");
@@ -87,16 +86,9 @@ function renderizarPaginacion(totalProductos) {
 // ===============================
 function aplicarFiltros() {
   const categoria = filtroCategoria.value;
-  const precioMax = parseInt(filtroPrecio.value);
-  const marcasSeleccionadas = Array.from(filtroMarcas)
-    .filter(cb => cb.checked)
-    .map(cb => cb.value);
-
-  productosFiltrados = productos.filter(p => {
-    const cumpleCategoria = categoria === "" || p.categoria === categoria;
-    const cumplePrecio = p.precio <= precioMax;
-    const cumpleMarca = marcasSeleccionadas.length === 0 || marcasSeleccionadas.includes(p.marca?.toLowerCase());
-    return cumpleCategoria && cumplePrecio && cumpleMarca;
+ 
+  productosFiltrados = productos.filter(p => {    
+    return categoria === "" || p.categoria === categoria;
   });
 
   aplicarOrden();
@@ -129,9 +121,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   productosFiltrados = [...productos];
   renderizarProductos(productos);
   // Listeners
-  filtroPrecio.addEventListener("input", () => {
-    precioMaxEl.textContent = `$${filtroPrecio.value}`;
-  });
+  
 
   botonFiltros.addEventListener("click", aplicarFiltros);
   ordenSelect.addEventListener("change", () => {

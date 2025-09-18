@@ -51,7 +51,7 @@
           </div>
 
           <!-- Aquí se pintan los productos -->
-          <div id="lista-productos-carrito"></div>
+          <div id="lista-productos-carrito" class="lista-productos-carrito"></div>
 
           <!-- Mensaje carrito vacío -->
           <div id="mensaje-carrito-vacio" class="mensaje-carrito-vacio" style="display:none;">
@@ -78,6 +78,10 @@
                 <span>Descuento:</span>
                 <span id="descuento-carrito">-$0.00</span>
               </div>
+              <div class="linea-precio envio">
+                <span>Envío:</span>
+                <span id="envio-carrito">$0.00</span>
+              </div>
               <div class="linea-precio total">
                 <strong>Total:</strong>
                 <span id="total-carrito">$0.00</span>
@@ -97,10 +101,43 @@
             <!-- Opciones de envío -->
             <div class="seccion-envio">
               <h3>Envío</h3>
-              <label><input type="radio" name="opcion-envio" value="estandar" checked> Estándar ($500)</label><br />
-              <label><input type="radio" name="opcion-envio" value="express"> Express ($800)</label><br />
-              <label><input type="radio" name="opcion-envio" value="retiro"> Retiro en local ($0)</label>
-            </div>
+
+              <label class="opcion-envio">
+                <input type="radio" name="opcion-envio" value="estandar" checked>
+                <span class="radio-personalizado"></span>
+                <div class="info-envio">
+                  <div>
+                    <span class="tipo-envio">Estándar</span>
+                    <div class="tiempo-envio">3 a 5 días hábiles</div>
+                  </div>
+                  <span class="precio-envio">$500</span>
+                </div>
+              </label>
+
+              <label class="opcion-envio">
+                <input type="radio" name="opcion-envio" value="express">
+                <span class="radio-personalizado"></span>
+                <div class="info-envio">
+                  <div>
+                    <span class="tipo-envio">Express</span>
+                    <div class="tiempo-envio">24 a 48 hs</div>
+                  </div>
+                  <span class="precio-envio">$800</span>
+                </div>
+              </label>
+
+              <label class="opcion-envio">
+                <input type="radio" name="opcion-envio" value="retiro">
+                <span class="radio-personalizado"></span>
+                <div class="info-envio">
+                  <div>
+                    <span class="tipo-envio">Retiro en local</span>
+                    <div class="tiempo-envio">Disponible en el día</div>
+                  </div>
+                  <span class="precio-envio">$0</span>
+                </div>
+              </label>
+            </div>      
 
             <!-- Finalizar -->
             <button id="boton-finalizar-compra" class="boton-finalizar-compra" disabled>
