@@ -4,11 +4,8 @@ import { obtenerProductos } from "./api.js";
 // Referencias al DOM
 const grid = document.getElementById("grid-productos");
 const filtroCategoria = document.getElementById("filtro-categoria");
-
-const botonFiltros = document.getElementById("boton-aplicar-filtros");
 const ordenSelect = document.getElementById("orden-productos");
 const contadorResultados = document.getElementById("contador-resultados");
-
 const btnAnterior = document.getElementById("boton-pagina-anterior");
 const btnSiguiente = document.getElementById("boton-pagina-siguiente");
 const numerosPagina = document.getElementById("numeros-pagina");
@@ -41,8 +38,9 @@ function renderizarProductos(lista) {
     grid.innerHTML += `
       <div class="tarjeta-producto">
         <img src="${prod.img}" alt="${prod.nombre}" loading="lazy">
-        <h3>${prod.nombre}</h3>
-        <p>$${prod.precio}</p>
+        <h3 class="nombre-producto">${prod.nombre}</h3>
+        <p class="precio-producto">$${prod.precio}</p>
+        <p class="descripcion-producto">${prod.descripcion}</p>
         <button onclick="agregarAlCarrito(${prod.id})" class="boton boton-primario">
           <i class="bi bi-cart-plus"></i> Agregar
         </button>
@@ -84,7 +82,7 @@ function renderizarPaginacion(totalProductos) {
 // ===============================
 // Aplicar filtros
 // ===============================
-function aplicarFiltros() {
+function aplicarFiltros() {  
   const categoria = filtroCategoria.value;   
   productosFiltrados = productos.filter(p => {    
     if (categoria === "oferta") {
@@ -138,7 +136,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   // Listeners
-  botonFiltros.addEventListener("click", aplicarFiltros);
+  
+  filtroCategoria.addEventListener("change", aplicarFiltros);
   ordenSelect.addEventListener("change", () => {
     aplicarOrden();
     renderizarProductos(productosFiltrados);

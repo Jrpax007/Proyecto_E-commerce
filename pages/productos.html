@@ -17,7 +17,7 @@
         <div class="contenedor encabezado-contenedor">
             <!-- Logo -->
             <div class="logo">
-                <a href="index.html" aria-label="Página principal - ComponentesPC">
+                <a href="../index.html" aria-label="Página principal - ComponentesPC">
                     <img src="../assets/icons/Proyecto nuevo.webp" alt="Logo ComponentesPC" width="40" height="40">
                     <span class="texto-logo">ComponentesPC</span>
                 </a>
@@ -42,14 +42,7 @@
 
             <!-- Controles del Encabezado -->
             <div class="controles-encabezado">
-                <!-- Sistema de Búsqueda -->
-                <div class="contenedor-busqueda">
-                    <input type="text" id="busqueda-global" placeholder="Buscar productos..."
-                        aria-label="Campo de búsqueda">
-                    <button id="boton-buscar" class="boton-busqueda" aria-label="Realizar búsqueda">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
+                
 
                 <!-- Selector de Tema -->
                 <button class="selector-tema" id="selector-tema" aria-label="Cambiar entre modo claro y oscuro">
@@ -99,12 +92,6 @@
               <option value="Gabinete">Gabinete</option>
             </select>
           </div>
-
-          
-
-          <button id="boton-aplicar-filtros" class="boton boton-primario">
-            <i class="bi bi-funnel"></i> Aplicar filtros
-          </button>
         </aside>
 
        <!-- Productos -->
@@ -147,13 +134,57 @@
       </div>
     </div>
   </main>
+     <!-- Pie de Página -->
+    <footer class="pie-pagina" role="contentinfo">
+        <div class="contenedor">
+            <div class="grid-pie-pagina">
+                <div class="columna-pie">
+                    <h3>Nosotros</h3>
+                    <ul class="lista-pie">
+                        <li><a href="#">Quiénes Somos</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
 
-  <!-- Footer -->
-  <footer class="pie-pagina">
-    <div class="contenedor">
-      <p>&copy; 2024 ComponentesPC - Todos los derechos reservados</p>
-    </div>
-  </footer>
+                <div class="columna-pie">
+                    <h3>Categorías</h3>
+                    <ul class="lista-pie">
+                        <li><a href="productos.html?categoria=Procesador">Procesadores</a></li>
+                        <li><a href="productos.html?categoria=Grafica">Tarjetas Gráficas</a></li>
+                        <li><a href="productos.html?categoria=Memorias">Memorias RAM</a></li>
+                    </ul>
+                </div>
+
+                <div class="columna-pie">
+                    <h3>Soporte</h3>
+                    <ul class="lista-pie">
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+
+                <div class="columna-pie">
+                    <h3>Medios de Pago</h3>
+                    <img src="../assets/images/medios-pago.webp" alt="Medios de pago aceptados" loading="lazy" class="imagen-medios-pago">
+                    <p class="texto-medios-pago">Aceptamos todas las tarjetas y transferencias</p>
+                </div>
+            </div>
+
+            <div class="separador-pie"></div>
+
+            <div class="pie-inferior">
+                <p class="copyright">&copy; 2024 ComponentesPC - Todos los derechos reservados</p>
+                <div class="redes-sociales">
+                    <a href="#" aria-label="Síguenos en Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Síguenos en Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Síguenos en Twitter"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
   <!-- Scripts -->
   <script src="../js/api.js" type="module" defer></script>
