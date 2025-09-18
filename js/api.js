@@ -1,4 +1,7 @@
-
+/**
+ * Sistema de API y Gestión de Datos.
+ * Comunicación con backend y gestión de datos local.
+ */
 export async function obtenerProductos() {
   const res = await fetch('https://api.jsonbin.io/v3/b/68c1c90eae596e708fea0842', {
     method: 'GET',

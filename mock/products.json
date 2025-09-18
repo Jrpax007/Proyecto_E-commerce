@@ -3,7 +3,10 @@
     "id": 1,
     "nombre": "Auricular",
     "categoria": "Auricular",
-    "precio": 500,
+    "precio": 49000,
+    "marca": "Corsair",
+    "stock": 13,
+    "descripcion": "Auricular de la marca Corsair, modelo Auricular con gran rendimiento.",
     "img": [
       "https://res.cloudinary.com/dwyp0ydc0/image/upload/v1757264078/compragamer_Imganen_general_9279_Auriculares_Logitech_H390_Black_USB_5f2c0ee3_guwvl1.jpg"
     ]
