@@ -2867,13 +2867,13 @@ input:valid:not(:focus):not(:placeholder-shown) {
 
 /* ===== MARQUEE ===== */
 .contenedor-marquee {
-    background-color: rgb(223, 164, 0);*/
+    background-color: rgb(223, 164, 0);
     width: 100%;
     overflow: hidden;
 }
 
 .marquee {
-    /display: inline-block;/
+    display: inline-block;
     white-space: nowrap;
     animation: scroll 20s linear infinite;
 }
