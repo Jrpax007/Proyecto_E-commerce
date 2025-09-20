@@ -21,7 +21,8 @@
     --color-fondo: #f8fafc;
     --color-borde: #e2e8f0;
     --color-tarjeta: #ffffff;
-    --color-sombra: rgba(0, 0, 0, 0.1);
+    --color-productos:rgb(235, 235, 235);
+    --color-sombra: rgba(0, 0, 0, 0.25);
     
     /* Tipografía */
     --fuente-principal: 'Segoe UI', system-ui, sans-serif;
@@ -64,6 +65,7 @@
     --color-fondo: #0f172a;
     --color-borde: #334155;
     --color-tarjeta: #1e293b;
+    --color-productos: #1e293b;
     --color-sombra: rgba(0, 0, 0, 0.3);
 }
 
@@ -167,8 +169,8 @@ a:hover {
 }
 
 .logo img {
-    width: 350px;
-    height: 80px;
+    width: 55%;
+    height: 40%;
     object-fit: contain;    
 }
 
@@ -507,7 +509,7 @@ a:hover {
 .tarjeta-categoria {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-tarjeta);
+    background-color: var(--color-productos);
     border-radius: var(--radio-borde);
     overflow: hidden;
     box-shadow: var(--sombra);
@@ -907,7 +909,7 @@ textarea {
 .opcion-checkbox {
     display: flex;
     align-items: center;
-    gap: var(--espaciado-sm);
+    gap: 5px;
     cursor: pointer;
     padding: var(--espaciado-sm) 0;
 }
@@ -2865,6 +2867,7 @@ input:valid:not(:focus):not(:placeholder-shown) {
 
 /* ===== MARQUEE ===== */
 .contenedor-marquee {
+    background-color: rgb(223, 164, 0);*/
     width: 100%;
     overflow: hidden;
 }
