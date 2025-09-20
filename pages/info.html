@@ -16,7 +16,7 @@
     <header class="encabezado-principal" role="banner">
         <div class="contenedor encabezado-contenedor">
             <!-- Logo -->
-           <div class="logo">
+            <div class="logo">
                 <a href="index.html" aria-label="Página principal - ComponentesPC">
                     <img src="./assets/icons/logoGrandeAzul.png" alt="Logo ComponentesPC" width="100" height="50">
                     
@@ -34,10 +34,11 @@
             <!-- Navegación Principal -->
             <nav class="navegacion-principal" id="navegacion-principal" aria-label="Navegación principal">
                <ul class="lista-navegacion">
-                    <li><a href="../index.html" class="enlace-navegacion " aria-current="page">Inicio</a></li>
-                    <li><a href="productos.html" class="enlace-navegacion activo">Productos</a></li>                    
+                    <li><a href="../index.html" class="enlace-navegacion" aria-current="page">Inicio</a></li>
+                    <li><a href="productos.html" class="enlace-navegacion">Productos</a></li>                    
                     <li><a href="contacto.html" class="enlace-navegacion">Contacto</a></li>
-                    <li><a href="info.html" class="enlace-navegacion">Informacion</a></li>
+                    <li><a href="info.html" class="enlace-navegacion activo">Informacion</a></li>
+                    
                 </ul>
             </nav>
 
@@ -63,77 +64,60 @@
 
   <!-- Contenido principal -->
   <main class="contenido-principal contenido-productos">
-    <div class="contenedor">
-      <div class="encabezado-pagina">
-        <h1>Catálogo de Productos</h1>
-        <p>Encuentra el componente perfecto para tu setup</p>
-      </div>
 
-      <div class="layout-productos">
-        <!-- Panel de filtros -->
-        <aside class="panel-filtros">
-          <h2>Filtros</h2>
-          <div>
-            <h3>Categoría</h3>
-            <select id="filtro-categoria">
-              <option value="">Todas</option>
-              <option value="Auricular">Auricular</option>
-              <option value="Almacenamiento-solido">Almacenamiento-solido</option>
-              <option value="Almacenamiento-rigido">Almacenamiento-rigido</option>
-              <option value="Cooler-fan">Cooler-fan</option>
-              <option value="Fuente">Fuente</option>
-              <option value="Grafica">Grafica</option>
-              <option value="Memorias">Memorias</option>
-              <option value="Monitor">Monitor</option>
-              <option value="Mouse">Mouse</option>
-              <option value="Mouse-pad">Mouse-pad</option>
-              <option value="Procesador">Procesador</option>
-              <option value="Placa-madre">Placa-madre</option>
-              <option value="Teclado">Teclado</option>
-              <option value="Gabinete">Gabinete</option>
-            </select>
-          </div>
-        </aside>
+        <!-- QUIÉNES SOMOS -->
+        <section id="quienes-somos" class="seccion-info">
+        <h1>Quiénes Somos</h1>
+        <p><strong>ComponentesPC</strong> es una tienda online dedicada a la venta de componentes de computadoras:
+            procesadores, tarjetas gráficas, memorias, almacenamiento, periféricos y mucho más. 
+            Nacimos con el objetivo de acercar la mejor tecnología a nuestros clientes, con un servicio confiable y transparente.</p>
+        <p><strong>Nuestra visión</strong> es ser un gran e-commerce de referencia en el sector, priorizando siempre a los clientes y sus necesidades.</p>
+        </section>
 
-       <!-- Productos -->
-<section class="seccion-productos">
-  <div class="controles-visualizacion">
-    <div class="info-resultados">
-      <h2>Productos</h2>
-      <span id="contador-resultados">Mostrando 0 productos</span>
-    </div>
-    <div class="controles-ordenamiento">
-      <label for="orden-productos">Ordenar por:</label>
-      <select id="orden-productos">
-        <option value="nombre">Nombre A-Z</option>
-        <option value="precio-asc">Precio: Menor a Mayor</option>
-        <option value="precio-desc">Precio: Mayor a Menor</option>
-        <option value="popularidad">Popularidad</option>
-      </select>
-    </div>
-  </div>
+        <!-- TÉRMINOS Y CONDICIONES -->
+        <section id="terminos" class="seccion-info">
+        <h2>Términos y Condiciones</h2>
+        <p><em>Última actualización: 20 de septiembre de 2025</em></p>
+        <p>Al utilizar el sitio web de <strong>ComponentesPC</strong> aceptás estos términos y condiciones. 
+            Los precios y disponibilidades de productos pueden variar sin previo aviso. 
+            Las imágenes son ilustrativas. Los pedidos se procesan una vez confirmado el pago.</p>
+        <p>Las compras realizadas se rigen por las leyes vigentes en Argentina. 
+            Ante cualquier controversia, la jurisdicción competente será la de la ciudad de Rosario, Santa Fe.</p>
+        </section>
 
-  <!-- Grid dinámico -->
-  <div id="grid-productos" class="grid-productos"></div>
+        <!-- POLÍTICA DE PRIVACIDAD -->
+        <section id="privacidad" class="seccion-info">
+        <h2>Política de Privacidad</h2>
+        <p><em>Última actualización: 20 de septiembre de 2025</em></p>
+        <p>En <strong>ComponentesPC</strong> respetamos y protegemos la privacidad de nuestros usuarios. 
+            Los datos personales que se nos brindan (como nombre, correo electrónico, dirección o teléfono) 
+            se utilizan únicamente para procesar pedidos, brindar soporte y mejorar la experiencia de compra.</p>
+        <p>No compartimos información con terceros salvo que sea necesario para procesar pagos o envíos. 
+            Podés solicitar en cualquier momento la modificación o eliminación de tus datos escribiéndonos a contacto@componentespc.com.</p>
+        </section>
 
-  <!-- Paginación -->
-  <nav class="paginacion" aria-label="Paginación de productos">
-    <button class="boton-paginacion" id="boton-pagina-anterior" disabled>
-      <i class="bi bi-chevron-left"></i> Anterior
-    </button>
+        <!-- PREGUNTAS FRECUENTES (FAQ) -->
+        <section id="faq" class="seccion-info">
+        <h2>Preguntas Frecuentes</h2>
 
-    <div class="numeros-pagina" id="numeros-pagina">
-      <!-- Se generan dinámicamente -->
-    </div>
+        <h3>¿Qué medios de pago aceptan?</h3>
+        <p>Aceptamos todas las tarjetas de crédito y débito, transferencias bancarias y pagos con billeteras virtuales.</p>
 
-    <button class="boton-paginacion" id="boton-pagina-siguiente">
-      Siguiente <i class="bi bi-chevron-right"></i>
-    </button>
-  </nav>
-</section>
+        <h3>¿Cuánto tarda el envío?</h3>
+        <p>El plazo estimado es de 3 a 7 días hábiles según tu ubicación y el método de envío seleccionado.</p>
 
-      </div>
-    </div>
+        <h3>¿Realizan factura A?</h3>
+        <p>Sí, emitimos Factura A y B. Podés cargar tus datos fiscales al momento de la compra.</p>
+
+        <h3>¿Puedo retirar mi pedido en persona?</h3>
+        <p>Sí, contamos con retiro en sucursal en Rosario. Te avisaremos por email cuando tu compra esté lista para retirar.</p>
+
+        <h3>¿Los productos tienen garantía?</h3>
+        <p>Todos nuestros productos cuentan con garantía oficial de 12 meses, salvo que se indique lo contrario.</p>
+
+        <h3>¿Cómo gestiono una devolución?</h3>
+        <p>Podés solicitar la devolución dentro de los 10 días corridos posteriores a la compra, siempre que el producto esté en perfecto estado y con su embalaje original.</p>
+        </section>
   </main>
      <!-- Pie de Página -->
     <footer class="pie-pagina" role="contentinfo">
@@ -188,10 +172,7 @@
 
 
   <!-- Scripts -->
-  <script src="../js/api.js" type="module" defer></script>
-<script src="../js/carrito.js" defer></script>
-<script src="../js/productos.js" type="module" defer></script>
-<script src="../js/toggle.js" defer></script>
-<script src="../js/scripts.js"></script>
+    <script src="../js/toggle.js" defer></script>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
